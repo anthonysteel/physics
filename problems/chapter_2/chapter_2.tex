@@ -1,0 +1,139 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+%\usepackage[dutch]{babel}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+\title{Chapter 2 Problems}
+\author{Anthony Steel}
+\date{\today}
+\maketitle
+\begin{enumerate}
+  \item \textbf{The metric of flat, three-dimensional Euclidean space is:} \[
+      ds^2 = dx^2 + dy^2 + dz^2
+  \]
+  \textbf{Show that the metric components $g_{uv}$ in spherical polar
+  coordinates $r, \theta, \phi$ defined by:}
+  \[
+    \begin{align*}
+      &r = \sqrt{x^2 + y^2 + z^2} \\
+      &\cos\theta = \frac{z}{r}, \\
+      &\tan\phi = \frac{y}{x}
+    \end{align*}
+  \]
+  \textbf{is given by:}
+  \[
+    s^2 = dr^2 + r^2 d\theta^2 + r^2 \sin^2\thetad\phi^2
+  \]
+ $g_{uv}$ is a tensor of type $\left( 0,2 \right) $ and therefore transforms as:
+  \[
+    g_{\mu',\nu'} = g_{\mu,\nu} \frac{\partial x^\mu}{\partial x^{\mu'}}\frac{\partial x^\nu}{\partial x^{\nu'}}
+  \]
+  (see page 22 for the general \textit{tensor transformation law}). The above
+  equation uses Einstein index notation indicating that $\mu$ and $\nu$ are to
+  to be summed from 1 to 3 and the free indices, $\mu'$ and $\nu'$, are
+  enumerated through all possible combinations:
+  \[
+    \begin{matrix}
+      g_{1'1'}  && g_{1'2'} && g_{1'3'} \\
+      g_{2'1'} && g_{2'2'} && g_{2'3'} \\
+      g_{3'1'} && g_{3'2'} && g_{3'3'}
+    \end{matrix}
+  \]
+  Starting with:
+  \[
+    g_{1',1'} =
+    \sum_{\mu=1}^{3} \sum_{\nu=1}^{3} g_{\mu,\nu} \frac{\partial x^\mu}{\partial x^{1'}} \frac{\partial x^\nu}{\partial x^{1'}}
+  \]
+  \[
+    = \sum_{\mu=1}^{3}
+    g_{\mu, 1} \frac{\partial x^\mu}{\partial x^{1'}} \frac{\partial x^1}{\partial x^{1'}} +
+    g_{\mu, 2} \frac{\partial x^\mu}{\partial x^{1'}} \frac{\partial x^2}{\partial x^{1'}} +
+    g_{\mu, 3} \frac{\partial x^\mu}{\partial x^{1'}} \frac{\partial x^3}{\partial x^{1'}}
+  \]
+  The off diagonal elements of the Euclidean metric written in matrix for is an
+  identity matrix. This reduces the above summation from a possible 9
+  components to the following three: \[
+    g_{1',1'} =
+    \frac{\partial x^1}{\partial x^{1'}} \frac{\partial x^1}{\partial x^{1'}} +
+    \frac{\partial x^2}{\partial x^{1'}} \frac{\partial x^2}{\partial x^{1'}} +
+    \frac{\partial x^3}{\partial x^{1'}} \frac{\partial x^3}{\partial x^{1'}} =
+    \Bigg( \frac{\partial x^1}{\partial x^{1'}}\Bigg)^2+
+    \Bigg(\frac{\partial x^2}{\partial x^{1'}}\Bigg)^2+
+    \Bigg(\frac{\partial x^3}{\partial x^{1'}}\Bigg)^2
+  \]
+  Converting the notation to reflect the choices of basis:
+  \[
+    \begin{align*}
+    g_{r,r} &=
+    \Bigg( \frac{\partial x}{\partial r}\Bigg)^2+
+    \Bigg(\frac{\partial y}{\partial r}\Bigg)^2+
+    \Bigg(\frac{\partial z}{\partial r}\Bigg)^2\\
+    g_{\theta,\theta} &=
+    \Bigg( \frac{\partial x}{\partial \theta}\Bigg)^2+
+    \Bigg(\frac{\partial y}{\partial \theta}\Bigg)^2+
+    \Bigg(\frac{\partial z}{\partial \theta}\Bigg)^2\\
+    g_{\phi,\phi} &=
+    \Bigg( \frac{\partial x}{\partial \phi}\Bigg)^2+
+    \Bigg(\frac{\partial y}{\partial \phi}\Bigg)^2+
+    \Bigg(\frac{\partial z}{\partial \phi}\Bigg)^2
+    \end{align*}
+  \]
+  First, find an equation for $x$ in terms of $r$. Rearranging:
+  \[
+    \begin{align*}
+      &r = \sqrt{x^2 + y^2 + z^2} \to r^2= x^2+z^2+y^2,\\
+      &\cos\theta = \frac{z}{r} \to z = r\cos\theta, \\
+      &\tan\phi = \frac{y}{x} \to y = x\tan\phi
+    \end{align*}
+  \]
+  Substituting the second and third equation into the first gives:
+  \[
+    \begin{align*}
+      r^2&=x^2+(r\cos\theta)^2+(x\tan\phi)^2\\
+      r^2&=x^2+r^2\cos^2\theta+x^2\tan^2\phi\\
+      r^2-r^2\cos\theta&=x^2+x^2\tan^2\phi\\
+      (1-\cos^2\theta)r^2&=(1+\tan^2\phi)x^2\\
+      r^2\sin^2\theta &=(1+\tan^2\phi)x^2\\
+      x&=r\sqrt{\frac{\sin\theta^2}{1+\tan^2\phi}}\\
+    \end{align*}
+  \]
+  Differentiating:
+  \[
+    \begin{align*}
+      \frac{\partial x}{\partial r} &= \sqrt{\frac{\sin^2\theta}{1+\tan^2\phi}},\\ 
+      \frac{\partial x}{\partial \theta} &= 
+      -r\frac{\sqrt{1+\tan^2\phi}}{\sin\thet}\frac{\sin\theta\cos\theta}{1+\tan^2\phi}\\
+      &= 
+      -r\frac{\cos\theta}{\sqrt{1+\tan^2\phi}}
+    .\end{align*}
+  \]
+  Second, find an equation for $y$ in terms of $r$, and then differentiate:
+  \[
+  \begin{align*}
+    y&= x \tan\phi\\
+     &= r\sqrt{\frac{\sin\theta^2}{1+\tan^2\phi}} \tan\phi \\
+    \frac{\partial y}{\partial r}  &= \sqrt{\frac{\sin^2\theta}{1+\tan^2\phi}}\tan\phi\\
+  \end{align*}
+  \]
+  Lastly, $z$ in terms of $r$ simply follows from the definitiono of them
+  transformation:
+  \[
+  z = r\cos\theta \to \frac{\partial z}{\partial r} = \cos\theta
+  \]
+  Therefore:
+  \[
+    \begin{align*}
+      g_{rr}&=\frac{\sin\theta^2}{1+\tan^2\phi} + \frac{\sin^2\theta}{1+\tan^2\phi}\tan^2\phi + \cos^2\theta\\
+      g_{rr}&=\frac{\sin\theta^2 + \sin^2\theta\tan^2\phi}{1+\tan^2\phi} +\frac{(1+\tan^2\phi)\cos^2\theta}{1+\tan^2\phi}\\
+      g_{rr}&=\frac{\sin\theta^2 + \sin^2\theta\tan^2\phi+(1+\tan^2\phi)\cos^2\theta}{1+\tan^2\phi}\\
+      g_{rr}&=\frac{\sin^2\theta + \cos^2\theta+\sin^2\theta\tan^2\phi+\tan^2\phi\cos^2\theta}{1+\tan^2\phi}\\
+      g_{rr}&=\frac{1+\tan^2\phi}{1+\tan^2\phi}\\
+      g_{rr}&=1\\
+    .\end{align*}
+  \]
+  \end{enumerate}
+\end{document}
