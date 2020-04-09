@@ -98,42 +98,83 @@
       r^2-r^2\cos\theta&=x^2+x^2\tan^2\phi\\
       (1-\cos^2\theta)r^2&=(1+\tan^2\phi)x^2\\
       r^2\sin^2\theta &=(1+\tan^2\phi)x^2\\
-      x&=r\sqrt{\frac{\sin\theta^2}{1+\tan^2\phi}}\\
+      x&=r\frac{\sin\theta}{\sqrt{1+\tan^2\phi}}\\
     \end{align*}
   \]
   Differentiating:
   \[
     \begin{align*}
-      \frac{\partial x}{\partial r} &= \sqrt{\frac{\sin^2\theta}{1+\tan^2\phi}},\\ 
-      \frac{\partial x}{\partial \theta} &= 
-      -r\frac{\sqrt{1+\tan^2\phi}}{\sin\thet}\frac{\sin\theta\cos\theta}{1+\tan^2\phi}\\
-      &= 
-      -r\frac{\cos\theta}{\sqrt{1+\tan^2\phi}}
+      \frac{\partial x}{\partial r} &= \frac{\sin\theta}{\sqrt{1+\tan^2\phi}},\\
+      \frac{\partial x}{\partial \theta} &= -r\frac{\cos\theta}{\sqrt{1+\tan^2\phi}}\\
+      \frac{\partial x}{\partial \phi} &=
+      -r\frac{\sin\theta}{(1+\tan^2\phi)^{\frac{3}{2}}}\tan\phi\frac{1}{\cos^2\phi} \\
+      &=-r\frac{\sin\theta}{(1+\tan^2\phi)^{\frac{3}{2}}}\frac{\sin\phi}{\cos^3\phi} \\
     .\end{align*}
   \]
   Second, find an equation for $y$ in terms of $r$, and then differentiate:
   \[
   \begin{align*}
     y&= x \tan\phi\\
-     &= r\sqrt{\frac{\sin\theta^2}{1+\tan^2\phi}} \tan\phi \\
-    \frac{\partial y}{\partial r}  &= \sqrt{\frac{\sin^2\theta}{1+\tan^2\phi}}\tan\phi\\
+     &= r\frac{\sin\theta}{\sqrt{1+\tan^2\phi}} \tan\phi \\
+    \frac{\partial y}{\partial r}  &= \frac{\sin\theta}{\sqrt{1+\tan^2\phi}}\tan\phi\\
+    \frac{\partial y}{\partial \theta}  &= -r\frac{\cos\theta}{\sqrt{1+\tan^2\phi}} \tan\phi \\
+    \frac{\partial y}{\partial \phi}  &= \frac{-r\sin\theta}{(1+\tan^2\phi)^\frac{3}{2}}\frac{1}{\cos^2\phi}
   \end{align*}
   \]
-  Lastly, $z$ in terms of $r$ simply follows from the definitiono of them
+  Lastly, $z$ in terms of $r$ simply follows from the definition of them
   transformation:
   \[
-  z = r\cos\theta \to \frac{\partial z}{\partial r} = \cos\theta
+  z = r\cos\theta \to \frac{\partial z}{\partial r} = \cos\theta,
+      \frac{\partial z}{\partial \theta} = r \sin\theta,
+      \frac{\partial z}{\partial \phi} = 0
   \]
   Therefore:
   \[
     \begin{align*}
-      g_{rr}&=\frac{\sin\theta^2}{1+\tan^2\phi} + \frac{\sin^2\theta}{1+\tan^2\phi}\tan^2\phi + \cos^2\theta\\
-      g_{rr}&=\frac{\sin\theta^2 + \sin^2\theta\tan^2\phi}{1+\tan^2\phi} +\frac{(1+\tan^2\phi)\cos^2\theta}{1+\tan^2\phi}\\
-      g_{rr}&=\frac{\sin\theta^2 + \sin^2\theta\tan^2\phi+(1+\tan^2\phi)\cos^2\theta}{1+\tan^2\phi}\\
-      g_{rr}&=\frac{\sin^2\theta + \cos^2\theta+\sin^2\theta\tan^2\phi+\tan^2\phi\cos^2\theta}{1+\tan^2\phi}\\
-      g_{rr}&=\frac{1+\tan^2\phi}{1+\tan^2\phi}\\
-      g_{rr}&=1\\
-    .\end{align*}
+      g_{r,r}&=\frac{\sin\theta^2}{1+\tan^2\phi} + \frac{\sin^2\theta}{1+\tan^2\phi}\tan^2\phi + \cos^2\theta\\
+      g_{r,r}&=\frac{\sin\theta^2 + \sin^2\theta\tan^2\phi}{1+\tan^2\phi} +\frac{(1+\tan^2\phi)\cos^2\theta}{1+\tan^2\phi}\\
+      g_{r,r}&=\frac{\sin\theta^2 + \sin^2\theta\tan^2\phi+(1+\tan^2\phi)\cos^2\theta}{1+\tan^2\phi}\\
+      g_{r,r}&=\frac{\sin^2\theta + \cos^2\theta+\sin^2\theta\tan^2\phi+\tan^2\phi\cos^2\theta}{1+\tan^2\phi}\\
+      g_{r,r}&=\frac{1+\tan^2\phi}{1+\tan^2\phi}\\
+      g_{r,r}&=1\\
+    \end{align*}
   \]
+  \[
+    \begin{align*}
+      g_{\theta,\theta}&=
+      r^2 \frac{\cos^2\theta}{1+\tan^2\phi}+
+      r^2 \frac{\cos^2\theta}{1+\tan^2\phi}\tan^2\phi
+      + r^2\sin^2\theta\\
+      g_{\theta,\theta}&=
+      r^2 \frac{\cos^2\theta}{1+\tan^2\phi}+
+      r^2 \frac{\cos^2\theta}{1+\tan^2\phi}\tan^2\phi
+      + r^2\sin^2\theta\frac{1+\tan^2\phi}{1+\tan^2\phi}\\
+      g_{\theta,\theta}&=
+      r^2 \frac{\cos^2\theta+\cos^2\theta\tan^2\phi+\sin^2\theta+\tan^2\phi\sin^2\theta}{1+\tan^2\phi}\\
+      g_{\theta,\theta}&=
+      r^2 \frac{(\cos^2\theta+\sin^2\theta)+(\cos^2\theta+\sin^2\theta)\tan^2\phi}{1+\tan^2\phi}\\
+      g_{\theta,\theta}&=
+      r^2 \frac{1+\tan^2\phi}{1+\tan^2\phi}\\
+      g_{\theta,\theta}&= r^2 \\
+    \end{align*}
+  \]
+  \[
+    \begin{align*}
+      g_{\phi,\phi}&= r^2\sin^2\theta\Bigg(\frac{1}{(1+\tan^2\phi)^{3}\cos^4\phi} +
+      \frac{\sin^2\phi}{(1+\tan^2\phi)^3\cos^6x}\Bigg)\\
+      &=r^2\sin^2\theta\Bigg(\frac{\cos^2\phi+\sin^2\phi}{(1+\tan^2\phi)^3\cos^6\phi}\Bigg)\\
+      &=r^2\sin^2\theta\frac{1}{\big(\frac{\sin^2\phi+\cos^2\phi}{\cos^2\phi}\big)^3\cos^6\phi}\\
+      &=r^2\sin^2\theta
+    \end{align*}
+  \]
+  Therefore the metric components are:
+  \[
+    g_{\mu, \nu} =
+    \begin{bmatrix}
+      1 && 0 && 0 \\
+      0 && r^2 && 0 \\
+      0 && 0 && r^2\sin^2\theta
+    \end{bmatrix}
+  \] 
   \end{enumerate}
 \end{document}

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1586380627 "chapter_2.tex" "chapter_2.pdf" "chapter_2" 1586380627
+["pdflatex"] 1586395178 "chapter_2.tex" "chapter_2.pdf" "chapter_2" 1586395178
   "/etc/texmf/web2c/texmf.cnf" 1585942929 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -29,6 +29,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1480098733 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1480098733 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1480098733 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1480098733 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1480098733 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1480098733 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1480098733 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
@@ -58,9 +59,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1585942935 75955 f78456fd1308dc295dc476a68e28d85b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1585942936 724917 40ad0c9b0d398b166a4e213e788e48e8 ""
-  "chapter_2.aux" 1586380599 8 a94a2480d3289e625eea47cd1b285758 ""
-  "chapter_2.tex" 1586380626 5209 45127fd248e1d1ce1c0a11c702205f3e ""
+  "chapter_2.aux" 1586395170 8 a94a2480d3289e625eea47cd1b285758 ""
+  "chapter_2.tex" 1586395178 6951 c732e40b117b2b229551f25221f6f724 ""
   (generated)
-  "chapter_2.pdf"
   "chapter_2.log"
   "chapter_2.aux"
+  "chapter_2.pdf"
