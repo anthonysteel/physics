@@ -12,6 +12,59 @@
 \date{\today}
 \maketitle
 \begin{enumerate}
+  \item
+  \item
+  \item
+  \item
+  \begin{enumerate}
+    \item \textbf{Show that in any coordinate basis, the components of the
+      commutator of two vector fields $v$ and $w$ are given by}
+      \[
+        [v,w]^\mu = \sum_\nu \Big( v^\nu \frac{\partial w^\mu}{\partial x^\nu}
+        - w^\nu\frac{\partial v^\mu}{\partial x^\nu} \Big)
+      \]
+
+      \[
+  \begin{align}
+    [v,w](f) &= v(w(f)) - w(v(f)) \\
+   &= v(w^\mu\frac{\partial f}{\partial x^\mu})-w(v^\mu \frac{\partial f}{\partial x^\mu} )\\
+   &= v^\nu \frac{\partial}{\partial x^\nu} (w^\mu\frac{\partial f}{\partial x^\mu})-
+      w^\nu \frac{\partial}{\partial x^\nu} (v^\mu \frac{\partial f}{\partial x^\mu} )\\
+   &= v^\nu \Big( \frac{\partial w^\mu}{\partial x^\nu}\frac{\partial f}{\partial x^\mu}
+     + w^\mu \frac{\partial f}{\partial x^\nu x^\mu}\Big)-
+     w^\nu \Big( \frac{\partial v^\mu}{\partial x^\nu}\frac{\partial f}{\partial x^\mu}
+     + v^\mu \frac{\partial f}{\partial x^\nu x^\mu}\Big)\\
+   &= v^\nu \frac{\partial w^\mu}{\partial x^\nu}\frac{\partial f}{\partial x^\mu}
+     + v^\nu w^\mu \frac{\partial f}{\partial x^\nu x^\mu}
+   - w^\nu \frac{\partial v^\mu}{\partial x^\nu}\frac{\partial f}{\partial x^\mu}
+   - w^\nu v^\mu \frac{\partial f}{\partial x^\nu x^\mu}\\
+   &= v^\nu \frac{\partial w^\mu}{\partial x^\nu}\frac{\partial f}{\partial x^\mu}
+   - w^\nu \frac{\partial v^\mu}{\partial x^\nu}\frac{\partial f}{\partial x^\mu}
+   + \Big(v^\nu w^\mu \frac{\partial f}{\partial x^\nu x^\mu}
+   - w^\nu v^\mu \frac{\partial f}{\partial x^\nu x^\mu}\Big)\\
+  \end{align}
+      \]
+  Using the equality of mixed partial derivatives we can relabel the indices:
+  \[
+  \begin{align}
+   &= v^\nu \frac{\partial w^\mu}{\partial x^\nu}\frac{\partial f}{\partial x^\mu}
+   - w^\nu \frac{\partial v^\mu}{\partial x^\nu}\frac{\partial f}{\partial x^\mu}
+   + \Big(v^\nu w^\mu \frac{\partial f}{\partial x^\nu x^\mu}
+   - w^\mu v^\nu \frac{\partial f}{\partial x^\mu x^\nu}\Big)\\
+   &= v^\nu \frac{\partial w^\mu}{\partial x^\nu}\frac{\partial f}{\partial x^\mu}
+   - w^\nu \frac{\partial v^\mu}{\partial x^\nu}\frac{\partial f}{\partial x^\mu}\\
+   &= \Big(v^\nu \frac{\partial w^\mu}{\partial x^\nu}
+   - w^\nu \frac{\partial v^\mu}{\partial x^\nu}\Big) \frac{\partial f}{\partial x^\mu}\\
+   &= [v,w]^\mu\frac{\partial f}{\partial x^\mu}\\
+  \end{align}
+  \]
+  \end{enumerate}
+  \item
+  \item
+  \item
+  \item
+  \begin{enumerate}
+
   \item \textbf{The metric of flat, three-dimensional Euclidean space is:} \[
       ds^2 = dx^2 + dy^2 + dz^2
   \]
@@ -245,7 +298,7 @@
     &=-r\frac{\cos\theta}{\sqrt{1+\tan^2\phi}}\Bigg(-r\sin\theta\frac{\tan\phi\sec^2\phi}{(1+\tan^2\phi)^\frac{3}{2}}\Bigg)
     -r\tan\phi\frac{\cos\theta}{\sqrt{1+\tan^2\phi}}\Bigg(r \sin\theta \frac{\sec^2\phi}{(1+\tan^2\phi)^\frac{3}{2}} \Bigg)\\
   &=r^2\sin\theta\cos\theta\frac{\tan\phi\sec^2\phi}{(1+\tan^2\phi)^2}
-  -r^2 \sin \theta \cos\theta\frac{\tan\phi\sec^2\phi}{(1+\tan^2\phi)^2}\\ 
+  -r^2 \sin \theta \cos\theta\frac{\tan\phi\sec^2\phi}{(1+\tan^2\phi)^2}\\
   &= 0
     \end{align*}
   \]
@@ -258,6 +311,68 @@
       0 && 0 && r^2\sin^2\theta
     \end{bmatrix}
   \]
+  \item
+  \textbf{The spacetime metric of special relativity is}
+  \[
+  ds^2=-dt^2+dx^2+dy^2+dz^2
+  \]
+  \textbf{Find the components, $g_{\mu\nu}$ and $g^{\mu\nu}$, of the metric and
+  inverse metric in "rotating coordinates", defined by}
+  \[
+    \begin{align*}
+      t'&=t\\
+      x'&=(x^2+y^2)^\frac{1}{2}\cos(\phi-wt)\\
+      y'&=(x^2+y^2)^\frac{1}{2}\sin(\phi-wt)\\
+      z'&=z
+    \end{align*}
+  \]
+  \textbf{where $\tan\phi = \frac{y}{x}$}\\
+  It is easier differentiate with respect to the primed coordinates so find
+  $g^{\mu\nu}$ first. First writting the primed coordinates in terms of the
+  unprimed:
+  \[
+  \begin{align*}
+    t' &= t\\
+    x' &= (x^2+y^2)^\frac{1}{2}\cos(\tan^{-1}\frac{y}{x} - wt)\\
+    y' &= (x^2+y^2)^\frac{1}{2}\sin(\tan^{-1} \frac{y}{x} - wt)\\
+    z' &= z
+  \end{align*}
+  \]
+  Find all the necessary derivatives:
+  \[
+    \begin{align*}
+    \frac{\partial t'}{\partial t} &= 1\\
+    \frac{\partial t'}{\partial x} &= \frac{\partial t'}{\partial y} =
+    \frac{\partial t}{\partial z} = 0\\
+    \\
+    \frac{\partial x'}{\partial t} &= -w\sqrt{x^2+y^2} \sin(\tan^{-1}\frac{y}{x}-wt)\\
+    \frac{\partial x'}{\partial x} &=
+    \frac{x\cos(\tan^{-1} \frac{y}{x}-\omega t)+y\sin(\tan^{-1}\frac{y}{x}-\omega t)}{\sqrt{x^2+y^2}}\\
+    \frac{\partial x'}{\partial y} &=
+    \frac{-x\sin(\tan^{-1} \frac{y}{x}-\omega t)+y\cos(\tan^{-1}\frac{y}{x}-\omega t)}{\sqrt{x^2+y^2}}\\
+    \frac{\partial x'}{\partial z} &= 0\\
+    \\
+    \frac{\partial y'}{\partial t} &= -w\sqrt{x^2+y^2} \cos(\tan^{-1}\frac{y}{x}-wt)\\
+    \frac{\partial y'}{\partial x} &=
+    \frac{x\sin(\tan^{-1} \frac{y}{x}-\omega t)-y\cos(\tan^{-1} \frac{y}{x} - \omega t)}{\sqrt{x^2+y^2}}\\
+    \frac{\partial y'}{\partial y} &=
+    \frac{x\sin(\tan^{-1} \frac{y}{x}-\omega t)+y\cos(\tan^{-1} \frac{y}{x} - \omega t)}{\sqrt{x^2+y^2}}\\
+    \frac{\partial y'}{\partial z} &= 0 \\
+    \\
+    \frac{\partial z'}{\partial t} &=
+    \frac{\partial z'}{\partial x}=\frac{\partial z'}{\partial y}=0\\
+    \frac{\partial z'}{\partial z} &= 1\\
+    \end{align*}
+  \]
+\[
+  \Bigg(\frac{\partial x'}{\partial x}\Bigg)^2 = \Bigg(\frac{x\cos(\tan^{-1} \frac{y}{x}-\omega t)+y\sin(\tan^{-1}\frac{y}{x}-\omega t)}{\sqrt{x^2+y^2}}\Bigg)^2
+  = \frac{(x^2+y^2)\sin^2(wt)}{(x^2+y^2)}
+\]
+\[
+  \Bigg(\frac{\partial y'}{\partial y}\Bigg)^2 = \Bigg(\frac{x\cos(\tan^{-1} \frac{y}{x}-\omega t)+y\sin(\tan^{-1}\frac{y}{x}-\omega t)}{\sqrt{x^2+y^2}}\Bigg)^2
+  = (x^2+y^2)\sin^2(wt)
+\]
+    \end{enumerate}
   \end{enumerate}
 \section{Appendix A - Tensor Expansion}
   The metric is a rank ($0$,$2$) tensor so the transformation of the components
