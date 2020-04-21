@@ -44,6 +44,30 @@
                 &= f[v,w](g)+g[v,w](f)
     \end{align}
   \]
+\item \textbf{Let $X$, $Y$, $Z$ be smooth vector fields on a manifold $M$. Verify
+  that their commutator satisfies the Jacobi identity:}
+  \[
+    [[X,Y],Z] + [[Y,Z],X] + [[Z,X],Y] = 0
+  \]
+  Expand $[[X,Y],Z]$:
+  \[
+    \begin{align}
+      [[X,Y],Z](f) &= [X,Y]Z(f)-Z[X,Y](f)\\
+                   &= X(Y(Z(f)))-Y(X(Z(f)))-Z(X(Y(f))-Y(Z(f))) \\
+                   &= X(Y(Z(f)))-Y(X(Z(f)))-Z(X(Y(f)))+Z(Y(Z(f))) \\
+                   &= X(Y(Z(f)))-Y(X(Z(f)))-Z(X(Y(f)))+Z(Y(Z(f))) \\
+    \end{align}
+  \]
+  Now cyclically permute $X$,$Y$,$Z$:
+  \[
+    \begin{align}
+                   &= \underbrace{X(Y(Z(f)))}_a-\underbrace{Y(X(Z(f)))}_{-g}-\underbrace{Z(X(Y(f)))}_{-e}+\underbrace{Z(Y(X(f)))}_b \\
+                   &+ \underbrace{Y(Z(X(f)))}_c-\underbrace{Z(Y(X(f)))}_{-b}-\underbrace{X(Y(Z(f)))}_{-a}+\underbrace{X(Z(Y(f)))}_d \\
+                   &+ \underbrace{Z(X(Y(f)))}_e-\underbrace{X(Z(Y(f)))}_{-d}-\underbrace{Y(Z(X(f)))}_{-c}+\underbrace{Y(X(Z(f)))}_g \\
+                   &= 0
+    \end{align}
+  \]
+
   \end{enumerate}
   \item
   \begin{enumerate}
