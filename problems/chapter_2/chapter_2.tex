@@ -1,4 +1,4 @@
-\documentclass[a4paper]{article}
+\documentclass[9pt]{report}
 
 \usepackage[utf8]{inputenc}
 %\usepackage[T1]{fontenc}
@@ -44,8 +44,8 @@
                 &= f[v,w](g)+g[v,w](f)
     \end{align}
   \]
-\item \textbf{Let $X$, $Y$, $Z$ be smooth vector fields on a manifold $M$. Verify
-  that their commutator satisfies the Jacobi identity:}
+  \item \textbf{Let $X$, $Y$, $Z$ be smooth vector fields on a manifold $M$. Verify
+    that their commutator satisfies the Jacobi identity:}
   \[
     [[X,Y],Z] + [[Y,Z],X] + [[Z,X],Y] = 0
   \]
@@ -67,7 +67,39 @@
                    &= 0
     \end{align}
   \]
-
+\item \textbf{Let $Y_1,\ldots,Y_n$ be smooth vector fields on an n-dimensional
+  $M$ such that at each $p\in M$ they form a basis of the tangent space $V_p$.
+Then, at each point, we may expand each commutator $[Y_\alpha, Y_\beta]$ in
+this basis, thereby defining the functions $C^\gamma_\alpha_\beta=-C^\gamma_\beta_\alpha$ by}
+\[
+  [Y_\alpha, Y_\beta] = \sum_\gamma C^\gamma_\alpha_\beta Y_\gamma
+\]
+  \textbf{Use the Jacobi identity to derive an equation satisfied by $C^\gamma_\alpha_\beta$.}\\\\
+  Consider:
+  \[
+    \begin{align*}
+      [[Y_\alpha, Y_\beta], Y_\sigma] &= [C^\gamma_\alpha_\beta Y_\gamma,Y_\sigma]\\
+    &= C^\gamma_\alpha_\beta Y_\gamma Y_\sigma - Y_\sigma C^\gamma_\alpha_\beta Y_\gamma \\
+    &= C^\gamma_\alpha_\beta Y_\gamma Y_\sigma - C^\gamma_\alpha_\beta Y_\sigma Y_\gamma \\
+    &= C^\gamma_\alpha_\beta [Y_\gamma Y_\sigma - Y_\sigma Y_\gamma] \\
+    &= C^\gamma_\alpha_\beta \Big(Y_\gamma Y_\sigma - Y_\sigma Y_\gamma\Big) \\
+    &= C^\gamma_\alpha_\beta [Y_\gamma, Y_\sigma] \\
+    &= C^\gamma_\alpha_\beta C^\epsilon_\gamma_\sigma Y_\epsilon \\
+    \end{align*}
+  \]
+  Therefore the Jacobi identity gives:
+  \[
+  \begin{align*}
+    [[Y_\alpha, Y_\beta],Y_\sigma]+[[Y_\beta, Y_\sigma],Y_\alpha]+[[Y_\sigma, Y_\alpha],Y_\beta] &= 0 \\
+    C^\gamma_\alpha_\beta C^\epsilon_\gamma_\sigma Y_\epsilon
+    + C^\gamma_\beta_\sigma C^\epsilon_\gamma_\alpha Y_\epsilon + C^\gamma_\sigma_\alpha C^\epsilon_\gamma_\beta Y_\epsilon &=0 \\
+    (C^\gamma_\alpha_\beta C^\epsilon_\gamma_\sigma+ C^\gamma_\beta_\sigma C^\epsilon_\gamma_\alpha + C^\gamma_\sigma_\alpha C^\epsilon_\gamma_\beta) Y_\epsilon &=0 \\
+    \end{align*}
+  \]
+  Therefore the equations satisfied by the functions are:
+  \[
+    (C^\gamma_\alpha_\beta C^\epsilon_\gamma_\sigma+ C^\gamma_\beta_\sigma C^\epsilon_\gamma_\alpha + C^\gamma_\sigma_\alpha C^\epsilon_\gamma_\beta) =0
+  \]
   \end{enumerate}
   \item
   \begin{enumerate}
