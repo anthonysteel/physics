@@ -15,6 +15,36 @@
   \item
   \item
   \item
+    \begin{enumerate}
+    \item
+    \textbf{Verify that the commutator, defined by equation (2.2.14),
+    satisfies the linearity and Leibnitz properties, and hence defines a
+    vector field}
+  \[
+    \begin{align}
+    [v,w](f+g) &= v(w(f+g)) - w(v(f+g))\\
+               &= v(w(f)+w(g))-w(v(f)+v(g))\\
+               &= v(w(f))+v(w(g))-w(v(f))-w(v(g))\\
+               &= v(w(f))-w(v(f))+v(w(g))-w(v(g))\\
+               &= [v,w]f+[v,w]g\\
+    \end{align}
+  \]
+  Therefore the commutator satisfies the linearity property in $v$. The same
+  procedure can be applied symmetrically to $w$.
+  \[
+    \begin{align}
+      [v,w](fg) &= v(w(fg)) - w(v(fg))\\
+                &= v(w(f)g+fw(g)) - w(v(f)g+fv(g))\\
+                &= v(w(f)g)+v(fw(g)) - w(v(f)g)-w(fv(g))\\
+                &= v(w(f))g+w(f)v(g)+v(f)w(g)+fv(w(g))\\
+                &-w(v(f))g-v(f)w(g)-w(f)v(g)-fw(v(g))\\
+                &= v(w(f))g+f(v(w(g))-w(v(f))g-fw(v(g))\\
+                &= f(v(w(g))-fw(v(g))+v(w(f))g-w(v(f))g\\
+                &= f\Big((v(w(g))-w(v(g))\Big)+g\Big(v(w(f))-w(v(f))\Big)\\
+                &= f[v,w](g)+g[v,w](f)
+    \end{align}
+  \]
+  \end{enumerate}
   \item
   \begin{enumerate}
     \item \textbf{Show that in any coordinate basis, the components of the
