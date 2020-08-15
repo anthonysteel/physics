@@ -1,5 +1,5 @@
 \documentclass[9pt]{report}
-
+\usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 %\usepackage[T1]{fontenc}
 \usepackage{textcomp}
@@ -13,6 +13,59 @@
 \maketitle
 \begin{enumerate}
   \item
+    \begin{enumerate}
+      \item
+      \item
+        \textbf{
+        Show by explicit construction that two coordinate systems (as opposed
+        to the six used in the text) suffice to cover $S^2$ (it is impossible
+        to cover $S^2$ with a signle chart, as follows from the fact that $S^2$
+        is compact, but every open subset of $\mathbb{R}^2$  is noncompact see
+        appendix A.)}
+        \begin{figure}
+          \includegraphics{images/projection.png}
+          \caption{Projection of points on a circle into $\mathbb{R}^2$}
+          \label{projection}
+        \end{figure}
+
+        Consider the collection of two subsets, $O_N$ and $O_S$. $O_N$ contains
+        all the points in the set $S^2$ except the north pole $(0, 0, 1)$, and $O_S$ contains
+        all the points in $S^$ except the south pole $(0, 0, -1)$. Together
+        this collection contains every point in $S^2$ thereby satisfying property
+        $1$ required for a manifold.
+
+
+        Next we must determine two maps, $\psi_N$ and $\psi_S$ for $O_N$ and
+        $O_S$ respectively, and show that they are one-to-one and map $S^2$ to
+        $\mathbb{R}^2$. To construct these maps consider Figure \ref{projection}.
+        Pictured are all the points in $S^2$ which lie in the $X$-$Z$ plane.
+        We will use this diagram to construct the map $\psi_$.
+
+        Draw a line from the north pole $N$ that intersects the $S^2$ at a point
+        $P$ and the $X$ axis at $P^\prime$. The point $P$ has coordinates
+        $(x,0,z)$. The triangles $NzP$ and $NOP^\prime$ can be related using
+        similar triangles. This will give a relation between the point $P$
+        and $P^\prime$.
+        \[
+        \begin{align}
+          \frac{OP^\prime}{NO}&= \frac{zP}{Nz} \\
+          P^\prime &= \frac{x}{1-z}\\
+        \end{align}
+      \]
+      $P^\prime$ is equivalent to mapping the any point $P$ into the $X-Y$ plane
+      and we will denote this coordinate in the $X$ direction $X^\prime$. The same
+      argument can be made to find $Y^\prime$ by replacing $x$ in the above
+      equation with $y$. Therefore:
+      \[
+        (X^\prime, Y^\prime) = (\frac{x}{1-z}, \frac{y}{1-z})
+      \]
+        $\psi_N$ can be constructed in a similar manner but replacing $z$ with
+        $-z$:
+        \[
+          (X^\prime, Y^\prime) = (\frac{x}{1+z}, \frac{y}{1+z})
+        \]
+      Each of these maps are clearly one to one and onto.
+    \end{enumerate}
   \item
   \item
     \begin{enumerate}
