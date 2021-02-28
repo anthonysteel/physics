@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.3)  15 AUG 2020 01:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.3)  17 AUG 2020 20:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -725,367 +725,378 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./chapter_2.tex:83: Package amsmath Error: Erroneous nesting of equation structures;
-(amsmath)                trying to recover with `aligned'.
+Overfull \hbox (36.35844pt too wide) detected at line 82
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[]; Y[]\OT1/cmr/m/n/10 ) = ([]\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 )
+ []
 
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.83     \end{align}
-                    
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+
+Overfull \hbox (55.88242pt too wide) detected at line 86
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[]; Y[]\OT1/cmr/m/n/10 ) = ([]\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 X; Y\OT1/cmr/m/n/10 )
+ []
 
 [1] [2 <./images/projection.png>]
 
-./chapter_2.tex:98: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:104: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.98     \end{align}
-                    
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter_2.tex:112: Package amsmath Error: Erroneous nesting of equation structures;
-(amsmath)                trying to recover with `aligned'.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.112     \end{align}
+l.104     \end{align}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (24.08347pt too wide) detected at line 113
+./chapter_2.tex:119: Package amsmath Error: Erroneous nesting of equation structures;
+(amsmath)                trying to recover with `aligned'.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119     \end{align}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter_2.tex:133: Package amsmath Error: Erroneous nesting of equation structures;
+(amsmath)                trying to recover with `aligned'.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133     \end{align}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (24.08347pt too wide) detected at line 134
 [][]
  []
 
 
-./chapter_2.tex:121: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:142: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.121     \end{align}
+l.142     \end{align}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./chapter_2.tex:126: Double subscript.
+[3]
+./chapter_2.tex:147: Double subscript.
 <argument> ...ng the functions $C^\gamma _\alpha _
                                                   \beta =-C^\gamma _\beta _\...
-l.126 ..._\alpha_\beta=-C^\gamma_\beta_\alpha$ by}
+l.147 ..._\alpha_\beta=-C^\gamma_\beta_\alpha$ by}
                                                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:126: Double subscript.
+./chapter_2.tex:147: Double subscript.
 <argument> ...a _\alpha _\beta =-C^\gamma _\beta _
                                                   \alpha $ by
-l.126 ..._\alpha_\beta=-C^\gamma_\beta_\alpha$ by}
+l.147 ..._\alpha_\beta=-C^\gamma_\beta_\alpha$ by}
                                                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-[3]
-./chapter_2.tex:128: Double subscript.
-l.128 ..., Y_\beta] = \sum_\gamma C^\gamma_\alpha_
+./chapter_2.tex:149: Double subscript.
+l.149 ..., Y_\beta] = \sum_\gamma C^\gamma_\alpha_
                                                   \beta Y_\gamma
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:130: Double subscript.
+./chapter_2.tex:151: Double subscript.
 <argument> ...ion satisfied by $C^\gamma _\alpha _
                                                   \beta $.
-l.130 ...on satisfied by $C^\gamma_\alpha_\beta$.}
+l.151 ...on satisfied by $C^\gamma_\alpha_\beta$.}
                                                   \\\\
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--132
+Underfull \hbox (badness 10000) in paragraph at lines 150--153
 
  []
 
 
-./chapter_2.tex:141: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:162: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141     \end{align*}
+l.162     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./chapter_2.tex:141: Double subscript.
+./chapter_2.tex:162: Double subscript.
 <argument> ...], Y_\sigma ] &= [C^\gamma _\alpha _
                                                   \beta Y_\gamma ,Y_\sigma ]...
-l.141     \end{align*}
+l.162     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:141: Double subscript.
+./chapter_2.tex:162: Double subscript.
 <argument> ... ,Y_\sigma ]\\ &= C^\gamma _\alpha _
                                                   \beta Y_\gamma Y_\sigma - ...
-l.141     \end{align*}
+l.162     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:141: Double subscript.
+./chapter_2.tex:162: Double subscript.
 <argument> ...\sigma - Y_\sigma C^\gamma _\alpha _
                                                   \beta Y_\gamma \\ &= C^\ga...
-l.141     \end{align*}
+l.162     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:141: Double subscript.
+./chapter_2.tex:162: Double subscript.
 <argument> ...ta Y_\gamma \\ &= C^\gamma _\alpha _
                                                   \beta Y_\gamma Y_\sigma - ...
-l.141     \end{align*}
+l.162     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:141: Double subscript.
+./chapter_2.tex:162: Double subscript.
 <argument> ...\gamma Y_\sigma - C^\gamma _\alpha _
                                                   \beta Y_\sigma Y_\gamma \\...
-l.141     \end{align*}
+l.162     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:141: Double subscript.
+./chapter_2.tex:162: Double subscript.
 <argument> ...ma Y_\gamma \\ &= C^\gamma _\alpha _
                                                   \beta [Y_\gamma Y_\sigma -...
-l.141     \end{align*}
+l.162     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:141: Double subscript.
+./chapter_2.tex:162: Double subscript.
 <argument> ... Y_\gamma ] \\ &= C^\gamma _\alpha _
                                                   \beta \Big (Y_\gamma Y_\si...
-l.141     \end{align*}
+l.162     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:141: Double subscript.
+./chapter_2.tex:162: Double subscript.
 <argument> ...amma \Big ) \\ &= C^\gamma _\alpha _
                                                   \beta [Y_\gamma , Y_\sigma...
-l.141     \end{align*}
+l.162     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:141: Double subscript.
+./chapter_2.tex:162: Double subscript.
 <argument> ... Y_\sigma ] \\ &= C^\gamma _\alpha _
                                                   \beta C^\epsilon _\gamma _...
-l.141     \end{align*}
+l.162     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:141: Double subscript.
+./chapter_2.tex:162: Double subscript.
 <argument> ... _\alpha _\beta C^\epsilon _\gamma _
                                                   \sigma Y_\epsilon \\ 
-l.141     \end{align*}
+l.162     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 
-./chapter_2.tex:150: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:171: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.150     \end{align*}
+l.171     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./chapter_2.tex:150: Double subscript.
+./chapter_2.tex:171: Double subscript.
 <argument> ...Y_\beta ] &= 0 \\ C^\gamma _\alpha _
                                                   \beta C^\epsilon _\gamma _...
-l.150     \end{align*}
+l.171     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:150: Double subscript.
+./chapter_2.tex:171: Double subscript.
 <argument> ... _\alpha _\beta C^\epsilon _\gamma _
                                                   \sigma Y_\epsilon + C^\gam...
-l.150     \end{align*}
+l.171     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:150: Double subscript.
+./chapter_2.tex:171: Double subscript.
 <argument> ...sigma Y_\epsilon + C^\gamma _\beta _
                                                   \sigma C^\epsilon _\gamma ...
-l.150     \end{align*}
+l.171     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:150: Double subscript.
+./chapter_2.tex:171: Double subscript.
 <argument> ... _\beta _\sigma C^\epsilon _\gamma _
                                                   \alpha Y_\epsilon + C^\gam...
-l.150     \end{align*}
+l.171     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:150: Double subscript.
+./chapter_2.tex:171: Double subscript.
 <argument> ...lpha Y_\epsilon + C^\gamma _\sigma _
                                                   \alpha C^\epsilon _\gamma ...
-l.150     \end{align*}
+l.171     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:150: Double subscript.
+./chapter_2.tex:171: Double subscript.
 <argument> ..._\sigma _\alpha C^\epsilon _\gamma _
                                                   \beta Y_\epsilon &=0 \\ (C...
-l.150     \end{align*}
+l.171     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:150: Double subscript.
+./chapter_2.tex:171: Double subscript.
 <argument> ..._\epsilon &=0 \\ (C^\gamma _\alpha _
                                                   \beta C^\epsilon _\gamma _...
-l.150     \end{align*}
+l.171     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:150: Double subscript.
+./chapter_2.tex:171: Double subscript.
 <argument> ... _\alpha _\beta C^\epsilon _\gamma _
                                                   \sigma + C^\gamma _\beta _...
-l.150     \end{align*}
+l.171     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:150: Double subscript.
+./chapter_2.tex:171: Double subscript.
 <argument> ... _\gamma _\sigma + C^\gamma _\beta _
                                                   \sigma C^\epsilon _\gamma ...
-l.150     \end{align*}
+l.171     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:150: Double subscript.
+./chapter_2.tex:171: Double subscript.
 <argument> ... _\beta _\sigma C^\epsilon _\gamma _
                                                   \alpha + C^\gamma _\sigma ...
-l.150     \end{align*}
+l.171     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:150: Double subscript.
+./chapter_2.tex:171: Double subscript.
 <argument> ..._\gamma _\alpha + C^\gamma _\sigma _
                                                   \alpha C^\epsilon _\gamma ...
-l.150     \end{align*}
+l.171     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:150: Double subscript.
+./chapter_2.tex:171: Double subscript.
 <argument> ..._\sigma _\alpha C^\epsilon _\gamma _
                                                   \beta ) Y_\epsilon &=0 \\ 
-l.150     \end{align*}
+l.171     \end{align*}
                       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:154: Double subscript.
-l.154     (C^\gamma_\alpha_
+./chapter_2.tex:175: Double subscript.
+l.175     (C^\gamma_\alpha_
                            \beta C^\epsilon_\gamma_\sigma+ C^\gamma_\beta_\s...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:154: Double subscript.
-l.154 ...(C^\gamma_\alpha_\beta C^\epsilon_\gamma_
+./chapter_2.tex:175: Double subscript.
+l.175 ...(C^\gamma_\alpha_\beta C^\epsilon_\gamma_
                                                   \sigma+ C^\gamma_\beta_\si...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:154: Double subscript.
-l.154 ...C^\epsilon_\gamma_\sigma+ C^\gamma_\beta_
+./chapter_2.tex:175: Double subscript.
+l.175 ...C^\epsilon_\gamma_\sigma+ C^\gamma_\beta_
                                                   \sigma C^\epsilon_\gamma_\...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:154: Double subscript.
-l.154 ... C^\gamma_\beta_\sigma C^\epsilon_\gamma_
+./chapter_2.tex:175: Double subscript.
+l.175 ... C^\gamma_\beta_\sigma C^\epsilon_\gamma_
                                                   \alpha + C^\gamma_\sigma_\...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:154: Double subscript.
-l.154 ...\epsilon_\gamma_\alpha + C^\gamma_\sigma_
+./chapter_2.tex:175: Double subscript.
+l.175 ...\epsilon_\gamma_\alpha + C^\gamma_\sigma_
                                                   \alpha C^\epsilon_\gamma_\...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:154: Double subscript.
-l.154 ...C^\gamma_\sigma_\alpha C^\epsilon_\gamma_
+./chapter_2.tex:175: Double subscript.
+l.175 ...C^\gamma_\sigma_\alpha C^\epsilon_\gamma_
                                                   \beta) =0
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 
-./chapter_2.tex:184: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:205: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.184   \end{align}
+l.205   \end{align}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (7.6201pt too wide) detected at line 185
+Overfull \hbox (7.6201pt too wide) detected at line 206
 [][]
  []
 
 [4]
 
-./chapter_2.tex:198: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:219: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.198   \end{align}
+l.219   \end{align}
                    
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./chapter_2.tex:206: Double subscript.
-l.206      = \sum_{\alpha, \beta} C^\gamma_\alpha_
+./chapter_2.tex:227: Double subscript.
+l.227      = \sum_{\alpha, \beta} C^\gamma_\alpha_
                                                   \beta(Y^{\alpha^*})_\mu (Y...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:210: Double subscript.
-l.210 ..., Y_\beta] = \sum_\gamma C^\gamma_\alpha_
+./chapter_2.tex:231: Double subscript.
+l.231 ..., Y_\beta] = \sum_\gamma C^\gamma_\alpha_
                                                   \beta Y_\gamma
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./chapter_2.tex:214: Double subscript.
-l.214 ...^{\gamma^*}= \sum_\gamma C^\gamma_\alpha_
+./chapter_2.tex:235: Double subscript.
+l.235 ...^{\gamma^*}= \sum_\gamma C^\gamma_\alpha_
                                                   \beta Y_\gamma Y^{\gamma^*}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
+[5]
 
-./chapter_2.tex:235: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:256: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235     \end{align*}
+l.256     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./chapter_2.tex:239: Undefined control sequence.
-l.239 ... dr^2 + r^2 d\theta^2 + r^2 \sin^2\thetad
+./chapter_2.tex:260: Undefined control sequence.
+l.260 ... dr^2 + r^2 d\theta^2 + r^2 \sin^2\thetad
                                                   \phi^2
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1093,170 +1104,170 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[5]
 
-./chapter_2.tex:281: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:302: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.281     \end{align*}
+l.302     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./chapter_2.tex:298: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:319: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.298     \end{align*}
+l.319     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [6]
 
-./chapter_2.tex:346: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:367: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.346     \end{align*}
+l.367     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./chapter_2.tex:355: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:376: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.355     \end{align*}
-                      
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter_2.tex:366: Package amsmath Error: Erroneous nesting of equation structures;
-(amsmath)                trying to recover with `aligned'.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.366     \end{align*}
+l.376     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [7]
 
-./chapter_2.tex:386: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:387: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.386     \end{align*}
+l.387     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./chapter_2.tex:397: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:407: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.397     \end{align*}
+l.407     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./chapter_2.tex:412: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:418: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.412     \end{align*}
+l.418     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [8]
 
-./chapter_2.tex:421: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:433: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.421     \end{align*}
+l.433     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./chapter_2.tex:434: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:442: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.434     \end{align*}
+l.442     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./chapter_2.tex:437: LaTeX Error: Bad math environment delimiter.
+./chapter_2.tex:455: Package amsmath Error: Erroneous nesting of equation structures;
+(amsmath)                trying to recover with `aligned'.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.455     \end{align*}
+                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[9]
+
+./chapter_2.tex:458: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.437   \[
+l.458   \[
           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./chapter_2.tex:447: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:468: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.447     \end{align*}
+l.468     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./chapter_2.tex:448: Missing \endgroup inserted.
+./chapter_2.tex:469: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.448   \]
+l.469   \]
           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1265,240 +1276,240 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-./chapter_2.tex:460: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:481: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.460     \end{align*}
+l.481     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (142.44223pt too wide) detected at line 461
+Overfull \hbox (142.44223pt too wide) detected at line 482
 [][]
  []
 
-[9]
 
-./chapter_2.tex:484: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:505: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.484     \end{align*}
+l.505     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./chapter_2.tex:496: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:517: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.496   \end{align*}
+l.517   \end{align*}
                     
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+[10]
 
-./chapter_2.tex:522: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:543: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.522     \end{align*}
+l.543     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[10]
-Overfull \hbox (48.23932pt too wide) detected at line 527
+
+Overfull \hbox (48.23932pt too wide) detected at line 548
 [][][][] \OT1/cmr/m/n/10 = [][][][] = []
  []
 
 
-Overfull \hbox (40.94131pt too wide) detected at line 531
+Overfull \hbox (40.94131pt too wide) detected at line 552
 [][][][] \OT1/cmr/m/n/10 = [][][][] = (\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 y[]\OT1/cmr/m/n/10 ) [][](\OML/cmm/m/it/10 wt\OT1/cmr/m/n/10 )
  []
 
-
-./chapter_2.tex:560: Package amsmath Error: Erroneous nesting of equation structures;
-(amsmath)                trying to recover with `aligned'.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.560     \end{align*}
-                      
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 [11]
 
-./chapter_2.tex:577: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:581: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.577     \end{align*}
+l.581     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./chapter_2.tex:593: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:598: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.593     \end{align*}
+l.598     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./chapter_2.tex:609: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:614: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.609     \end{align*}
+l.614     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./chapter_2.tex:625: LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.625   \]
-          
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./chapter_2.tex:625: LaTeX Error: \begin{document} ended by \end{equation*}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.625   \]
-          
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./chapter_2.tex:625: Missing $ inserted.
-<inserted text> 
-                $
-l.625   \]
-          
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./chapter_2.tex:625: Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.625   \]
-          
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-./chapter_2.tex:625: Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.625   \]
-          
-Things are pretty mixed up, but I think the worst is over.
-
-
-./chapter_2.tex:640: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:630: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.640     \end{align*}
+l.630     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [12]
 
-./chapter_2.tex:656: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:646: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.646   \]
+          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./chapter_2.tex:646: LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.646   \]
+          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./chapter_2.tex:646: Missing $ inserted.
+<inserted text> 
+                $
+l.646   \]
+          
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./chapter_2.tex:646: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.646   \]
+          
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+./chapter_2.tex:646: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.646   \]
+          
+Things are pretty mixed up, but I think the worst is over.
+
+
+./chapter_2.tex:661: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.656     \end{align*}
+l.661     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./chapter_2.tex:672: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:677: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.672     \end{align*}
+l.677     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./chapter_2.tex:688: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:693: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.688     \end{align*}
+l.693     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./chapter_2.tex:704: Package amsmath Error: Erroneous nesting of equation structures;
+./chapter_2.tex:709: Package amsmath Error: Erroneous nesting of equation structures;
 (amsmath)                trying to recover with `aligned'.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.704     \end{align*}
+l.709     \end{align*}
+                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./chapter_2.tex:725: Package amsmath Error: Erroneous nesting of equation structures;
+(amsmath)                trying to recover with `aligned'.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.725     \end{align*}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1507,13 +1518,13 @@ If that doesn't work, type  X <return>  to quit.
 Here is how much of TeX's memory you used:
  3191 strings out of 494923
  41027 string characters out of 6180743
- 108355 words of memory out of 5000000
+ 106355 words of memory out of 5000000
  6450 multiletter control sequences out of 15000+600000
  11542 words of font info for 45 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,14n,26p,276b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on chapter_2.pdf (14 pages, 196431 bytes).
+Output written on chapter_2.pdf (14 pages, 199809 bytes).
 PDF statistics:
  113 PDF objects out of 1000 (max. 8388607)
  79 compressed objects within 1 object stream

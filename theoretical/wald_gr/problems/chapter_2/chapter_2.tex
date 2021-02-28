@@ -57,7 +57,7 @@
       argument can be made to find $Y^\prime$ by replacing $x$ in the above
       equation with $y$. Therefore:
       \[
-        (X^\prime, Y^\prime) = (\frac{x}{1-z}, \frac{y}{1-z})
+        O^N : S^2 \rightarrow \mathbb{R}^2 = {(X^\prime, Y^\prime) = (\frac{x}{1-z}, \frac{y}{1-z})}
       \]
         $\psi_N$ can be constructed in a similar manner but replacing $z$ with
         $-z$:
@@ -65,8 +65,29 @@
           (X^\prime, Y^\prime) = (\frac{x}{1+z}, \frac{y}{1+z})
         \]
       Each of these maps are clearly one to one and onto.
+      \[
+        (X, Y) = (\frac{x}{1-z}, \frac{y}{1-z})
+      \]
+      \[
+        (x, y, z) = (\frac{2X}{1+X^2+Y^2}. \frac{2Y}{1+X^2+Y^2}, \frac{-1+X^2+Y^2}{1+X^2+Y^2})
+      \]
+      $\psi_N : O_N \rightarrow U_N\subset \mathbb{R}^2$ and
+      $\psi_S : O_S \rightarrow U_S\subset \mathbb{R}^2$. In order to satisfy
+      property 3 of manifolds we must show that $\psi_N \circ \psi_S^{-1}$
+      and $\psi_S \circ \psi_N^{-1}$ the subsets of the map are open and the maps
+      are infinitely differentiable.
+      \[
+        (X^\prime, Y^\prime) = (\frac{2X}{(1+X^2+Y^2)(1-\frac{-1+X^2+Y^2}{1+X^2+Y^2})},
+                  \frac{2Y}{(1+X^2+Y^2)(1-\frac{-1+X^2+Y^2}{1+X^2+Y^2})})
+      \]
+      \[
+        (X^\prime, Y^\prime) = (\frac{2X}{1+X^2+Y^2+1-X^2-Y^2},
+                  \frac{2Y}{1+X^2+Y^2+1-X^2-Y^2}) = (X, Y)
+      \]
     \end{enumerate}
   \item
+    \textbf{Prove that any smooth function $F:\mathbb{R}^n \rightarrow \mathbb{R}$
+    can be written in the form equation (2.2.2)}
   \item
     \begin{enumerate}
     \item
