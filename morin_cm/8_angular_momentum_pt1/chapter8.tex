@@ -185,8 +185,24 @@ rewrite as:
 \[
   \ddot{\eta} = \ A^2 \omega^2 (\frac{1}{2} - \frac{1}{2} \cos 2\omega t) \eta
 \]
-This is a form of Mathieu's equation.
-
+This is a form of Mathieu's equation. Now consider $t = t_\text{vertical} + \delta$
+\[
+  \ddot{\eta}(\delta) = \ A^2 \omega^2 (\frac{1}{2} - \frac{1}{2} \cos 2\omega(t_\text{vertical} + \delta))\eta(\delta)
+\]
+Consider the $\cos$ expression:
+\[
+\begin{align}
+\cos 2\omega(t_\text{vertical} + \delta)) &= \cos(2\omega t_\text{vertical}) \cos 2 \omega \delta - \sin 2\omega t_\text{vertical} \sin 2 \omega \delta \\
+                                          &= \cos 2 \omega \delta
+\end{align}
+\]
+Assume $\delta$ is small so that $\cos 2\omega \delta \approx 1 - 2\omega^2 \delta^2$
+\[
+\begin{align}
+  \ddot{\eta} &= A^2 \omega^2 (\frac{1}{2} - \frac{1}{2} (1 - 2\omega^2 \delta^2)) \eta \\
+              &= A^2 \omega^4 \delta^2 \eta 
+\end{align}
+\]
 \subsection{Taylor Series Expansion}
 Taylor expand $\eta$ and $x$ as:
 \[
