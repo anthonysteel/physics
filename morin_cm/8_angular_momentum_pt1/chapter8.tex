@@ -74,7 +74,7 @@ T = \frac{1}{2} m (\dot{x}^2 + x^2\dot{\theta}^2) + \frac{1}{6}  M l^2 \dot{\the
 \]
 The potential energy for $m$ is simply:
 \[
-V_m = -mgl\cos\theta
+V_m = -mgx\cos\theta
 \]
 while the potnetial energy for $m$ is the vertical component of the position of
 the center mass:
@@ -83,7 +83,7 @@ V_M = -\frac{Mgl}{2}\cos\theta
 \]
 The Lagrangian $\mathcal{L}$ is:
 \[
-\mathcal{L} = T - V = \frac{1}{2} m (\dot{x}^2 + x^2\dot{\theta}^2) + \frac{1}{6}  M l^2 \dot{\theta}^2 + mgl\cos\theta + \frac{Mgl}{2}\cos\theta
+\mathcal{L} = T - V = \frac{1}{2} m (\dot{x}^2 + x^2\dot{\theta}^2) + \frac{1}{6}  M l^2 \dot{\theta}^2 + mgx\cos\theta + \frac{Mgl}{2}\cos\theta
 \]
 Finding the Euler-Lagrange equations for $x$:
 \[
@@ -93,12 +93,12 @@ Finding the Euler-Lagrange equations for $x$:
 \]
 \[
 \begin{align}
-\frac{\partial \mathcal{L}}{\partial x} &= m x \dot{\theta}^2
+\frac{\partial \mathcal{L}}{\partial x} &= m x \dot{\theta}^2 + mg\cos\theta 
 \end{align}
 \]
 \[
 \begin{align}
- \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial\dot{x}} = \frac{\partial \mathcal{L}}{\partial x} \Rightarrow \ddot{x} &= x \dot{\theta}^2
+ \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial\dot{x}} = \frac{\partial \mathcal{L}}{\partial x} \Rightarrow \ddot{x} &= x \dot{\theta}^2 + g \cos \theta 
 \end{align}
 \]
 and $\theta$:
@@ -109,28 +109,29 @@ and $\theta$:
 \]
 \[
 \begin{align}
-\frac{\partial \mathcal{L}}{\partial \theta} &= -gl (m + \frac{M}{2}) \sin \theta
+\frac{\partial \mathcal{L}}{\partial \theta} &= -g (mx + \frac{Ml}{2}) \sin \theta
 \end{align}
 \]
 \[
 \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial\dot{\theta}} = \frac{\partial \mathcal{L}}{\partial \theta} \Rightarrow m \frac{d}{dt}(x^2\dot{\theta}) + \frac{1}{3} Ml^2 \ddot{\theta}
-= -gl (m + \frac{M}{2}) \sin \theta
+= -g(mx + \frac{Ml}{2}) \sin \theta
 \]
 Therefore the Euler Lagrange equations are:
 \[
-m \frac{d}{dt}(x^2\dot{\theta}) + \frac{1}{3} Ml^2 \ddot{\theta} = -gl (m + \frac{M}{2}) \sin \theta \label{el_theta}
+m \frac{d}{dt}(x^2\dot{\theta}) + \frac{1}{3} Ml^2 \ddot{\theta} = -g (mx + \frac{Ml}{2}) \sin \theta \label{el_theta}
 \]
 \[
 \ddot{x} = x \dot{\theta}^2 \label{el_x}
 \]
-Reparameterizing in terms of $\eta$ and $r$:
+Reparameterizing in terms of $\eta$ and $r=\frac{m}{M}$:
 \begin{equation}
-r \frac{d}{dt}(\eta^2\dot{\theta}) + \frac{1}{3}\ddot{\theta} = -\frac{g}{l} (r + \frac{1}{2}) \sin \theta \label{el_eta}
+r \frac{d}{dt}(\eta^2\dot{\theta}) + \frac{1}{3}\ddot{\theta} = -\frac{g}{l} (\frac{rx}{l} + \frac{1}{2}) \sin \theta \label{el_eta}
 \end{equation}
 \begin{equation}
-\ddot{\eta} = \eta \dot{\theta}^2 \label{el_theta}
+\ddot{\eta} = \eta \dot{\theta}^2 \label{el_theta} + g\cos \theta 
 \end{equation}
 are the Euler-Lagrange equations.
+
 \section{Approximations}
 \subsection{Small mass approximation $m \ll M$}
 $m \ll M$ is equivalent to the condition $r \ll 1$. Let us assume that $r$ is
