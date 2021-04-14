@@ -1,3 +1,0 @@
-Why do clocks in special relativity have to be synchronized?
-
-G_ab = 8pi T_ab
