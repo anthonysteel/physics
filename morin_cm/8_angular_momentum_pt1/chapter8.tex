@@ -128,11 +128,21 @@ Reparameterizing in terms of $\eta$ and $r=\frac{m}{M}$:
 r \frac{d}{dt}(\eta^2\dot{\theta}) + \frac{1}{3}\ddot{\theta} = -\frac{g}{l} (\frac{rx}{l} + \frac{1}{2}) \sin \theta \label{el_eta}
 \end{equation}
 \begin{equation}
-\ddot{\eta} = \eta \dot{\theta}^2 \label{el_theta} + g\cos \theta 
+\ddot{\eta} = \eta \dot{\theta}^2 \label{el_theta} + \frac{g}{l}\cos \theta 
 \end{equation}
 are the Euler-Lagrange equations.
 
 \section{Approximations}
+Though the equations of motion cannot be solved exactly, it would be nice to 
+determine whether $\eta(t_\text{vertical})$ depends on $l$ in some approximation.
+To determine this we need an equation for $\eta$ by solving the $\eta$ equation
+of motion.
+
+
+The equations are coupled (i.e. $\theta$ appears in the equation of motion for
+$\eta$ and $\eta$ appears in the equation of motion for $\theta$) so a useful
+approximation would be one that decouples at least one of them.
+
 \subsection{Small mass approximation $m \ll M$}
 $m \ll M$ is equivalent to the condition $r \ll 1$. Let us assume that $r$ is
 negligibly small. The equations of motion then read:
@@ -140,7 +150,7 @@ negligibly small. The equations of motion then read:
 \ddot{\theta} = -\frac{3g}{2l} \sin \theta \label{small_r_el_theta}
 \end{equation}
 \begin{equation}
-\ddot{\eta} = \eta \dot{\theta}^2 \label{small_r_el_eta}
+\ddot{\eta} = \eta \dot{\theta}^2 \label{small_r_el_eta} + \frac{g}{l} \cos \theta
 \end{equation}
 By our definition of $\theta$ the vertical position is at $\theta = 0$ so small
 oscillations about the vertical are given by:
@@ -177,32 +187,17 @@ Taking a time derivative:
 \[
 \dot{\theta}^2(t) = A^2\omega^2 \cos^2 (\omega t)
 \]
-and substituting into $\ref{small_r_el_eta}$:
+We are interested in the time $t = t_\text{vertical} + \delta$ where $\delta$ is
+small. In this small region of time:
 \[
-\ddot{\eta} = \ A^2 \omega^2 \sin^2 (\omega t) \eta
+  \theta (\delta) = A\omega \delta 
 \]
-using the identity $\sin^2A = \frac{1}{2} - \frac{1}{2} \cos(2A)$, we can
-rewrite as:
 \[
-  \ddot{\eta} = \ A^2 \omega^2 (\frac{1}{2} - \frac{1}{2} \cos 2\omega t) \eta
+  \dot{\theta} (\delta) = A \omega
 \]
-This is a form of Mathieu's equation. Now consider $t = t_\text{vertical} + \delta$
+and:
 \[
-  \ddot{\eta}(\delta) = \ A^2 \omega^2 (\frac{1}{2} - \frac{1}{2} \cos 2\omega(t_\text{vertical} + \delta))\eta(\delta)
-\]
-Consider the $\cos$ expression:
-\[
-\begin{align}
-\cos 2\omega(t_\text{vertical} + \delta)) &= \cos(2\omega t_\text{vertical}) \cos 2 \omega \delta - \sin 2\omega t_\text{vertical} \sin 2 \omega \delta \\
-                                          &= \cos 2 \omega \delta
-\end{align}
-\]
-Assume $\delta$ is small so that $\cos 2\omega \delta \approx 1 - 2\omega^2 \delta^2$
-\[
-\begin{align}
-  \ddot{\eta} &= A^2 \omega^2 (\frac{1}{2} - \frac{1}{2} (1 - 2\omega^2 \delta^2)) \eta \\
-              &= A^2 \omega^4 \delta^2 \eta 
-\end{align}
+  \ddot{\eta} = A^2 \omega^2 \eta + \frac{g}{l}
 \]
 \subsection{Taylor Series Expansion}
 Taylor expand $\eta$ and $x$ as:
