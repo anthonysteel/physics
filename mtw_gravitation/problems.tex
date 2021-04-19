@@ -205,6 +205,27 @@
 \item
 \item
 \item
+  \textbf{Maxwell's Equations. Show, by explicit examination of components, that
+  the geometric laws}
+  \begin{equation}
+    F_{\alpha\beta,\gamma} + F_{\beta\gamma,\alpha} + F_{\gamma\alpha, \beta} = 0
+  \end{equation}
+  \begin{equation}
+    F^{\alpha\beta}_{,\beta} = 4\pi J^\alpha
+  \end{equation}
+  \textbf{do reduce to Maxwell's equations}
+  \begin{equation}
+    \nabla \cdot \textbf{B} = 0
+  \end{equation}
+  \begin{equation}
+    \frac{\partial \textbf{B}}{\partial t} + \nabla \times \textbf{E} = 0
+  \end{equation}
+  \begin{equation}
+    \nabla \cdot \textbf{E} = 4\pi \bf{\rho}
+  \end{equation}
+  \begin{equation}
+    \frac{\partial \textbf{E}}{\partial t} - \nabla \times \textbf{B} = -4\pi \textbf{J}
+  \end{equation}
 \item
 \item
 \item \textbf{More differentiation. (a) Justify the formula,}
@@ -231,6 +252,35 @@
     \end{align}
   \]
   Therefore the formula is justified.
+
+  \textbf{b) Let $\delta$ indicate a variation or small change, and justify the
+  formula:}
+  \[
+    \delta(F_\alpha_\beta F^\alpha^\beta) = 2 F_\alpha_\beta \delta F^\alpha^\beta
+  \]
+  The variation  will obey the product rule as follows and rembering that the variation of
+  the metric components would be zero:
+  \[
+    \begin{align}
+    \delta(F_\alpha_\beta F^\alpha^\beta) &= (\delta F_\alpha_\beta) F^\alpha^\beta + F_\alpha_\beta (\delta F^\alpha^\beta) \\
+                                          &= (\delta (\eta_\alpha_\gamma \eta_\beta_\nu F^\alpha^\beta ) F^\gamma^\nu) + F_\alpha_\beta (\delta F^\alpha^\beta) \\
+                                          &= (\delta (\eta_\alpha_\gamma) \eta_\beta_\nu F^\alpha^\beta + \eta_\alpha_\gamma \delta(\eta_\beta_\nu) F^\alpha^\beta + \eta_\alpha_\gamma \eta_\beta_\nu \delta F^\alpha^\beta  ) F^\gamma^\nu) + F_\alpha_\beta (\delta F^\alpha^\beta) \\
+                                          &= \eta_\alpha_\gamma \eta_\beta_\nu \delta F^\alpha^\beta  F^\gamma^\nu + F_\alpha_\beta (\delta F^\alpha^\beta) \\
+                                          &= \delta F^\alpha^\beta (\eta_\alpha_\gamma \eta_\beta_\nu  F^\gamma^\nu) + F_\alpha_\beta (\delta F^\alpha^\beta) \\
+                                          &= \delta F^\alpha^\beta F_\alpha_\beta + F_\alpha_\beta \delta F^\alpha^\beta \\
+                                          &= 2 F_\alpha_\beta \delta F^\alpha^\beta \\
+  \end{align}
+  \]
+  Therefore the formula is justified.
+
+  \textbf{c) Compute $(F_\alpha_\beta F^\alpha^\beta)_{,\mu} = ?$}
+  \[ 
+    \begin{align}
+    (F_\alpha_\beta F^\alpha^\beta)_{,\mu} &= F_\alpha_\beta_{,\mu} F^\alpha^\beta + F_\alpha_\beta F^\alpha^\beta_{,\mu} \\
+                                           &= (\eta_\alpha_\gamma \eta_\beta_\nu F^\alpha^\beta)_{,\mu} F^\gamma^\nu + F_\alpha_\beta F^\alpha^\beta_{,\mu} \\
+                                           &= F^\alpha^\beta_{,\mu} F_\alpha_\beta + F_\alpha_\beta F^\alpha^\beta_{,\mu} \\
+                                           &= 2F_\alpha_\beta F^\alpha^\beta_{,\mu} \\
+    \end{align}
+  \]
 \end{enumerate}
 \end{document}
-\
