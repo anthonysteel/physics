@@ -1,0 +1,71 @@
+\documentclass[9pt]{report}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+%\usepackage[dutch]{babel}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+\title{Misner, Thorne and Wheeler's Gravitation\protect\\ Problems}
+\author{Anthony Steel}
+\date{\today}
+\maketitle
+\chapter{}
+\chapter{}
+\chapter{The Electromagnetic Field}
+\begin{enumerate}
+  \item \textbf{Derive equations:}
+    \[
+       \mid  \mid F^\alpha_\beta  \mid \mid =
+       \begin{Vmatrix}
+         0 & E_x & E_y & E_z\\
+         E_x & 0 & B_z & -B_y\\
+         E_y & -B_z & 0 & B_x\\
+         E_z & B_y & -B_x & 0\\
+       \end{Vmatrix}
+    \]
+    \textbf{and}
+    \[
+       \mid  \mid F_\alpha_\beta  \mid \mid =
+       \begin{Vmatrix}
+         0 & -E_x & -E_y & -E_z\\
+         E_x & 0 & B_z & -B_y\\
+         E_y & -B_z & 0 & B_x\\
+         E_z & B_y & -B_x & 0\\
+       \end{Vmatrix}
+    \]
+    \textbf{for the components of Faraday by comparing:}
+    \[
+      dp^\alpha / d\tau =  e F^\alpha_\beta u^\beta \label{momentum}
+    \]
+    \textbf{with}
+    \[
+      \frac{d\textbf{p}}{d\tau} = \frac{1}{\sqrt{1-\textbf{v}^2}} \frac{d\textbf{p}}{dt} = \frac{e}{\sqrt{1-\textbf{v}^2} }(\textbf{E} + \textbf{v}\times\textbf{B}) = e(u^0\textbf{E} + \textbf{u} \times \textbf{B})
+    \]
+    \[
+      \frac{dp^0}{d\tau} = \frac{1}{\sqrt{1-\textbf{v}^2}} \frac{dE}{dt} = \frac{1}{\sqrt{1-\textbf{v}^2}}e\textbf{E} \cdot \textbf{v} = e \textbf{E} \cdot \textbf{u}
+    \]
+    \textbf{and by using definition:}
+    \[
+      F_\alpha_\beta = \eta_\alpha_\gamma F^\gamma_\beta
+    \]
+    \ref{momentum} represents the four following equations:
+    \[
+      \frac{dp^0}{d\tau} = e [ F^0_0 u^0 + F^0_1 u^1 + F^0_2 u^2 + F^0_3 u^3 ]
+    \]
+    \[
+      \frac{dp^1}{d\tau} = e [ F^1_0 u^0 + F^1_1 u^1 + F^1_2 u^2 + F^1_3 u^3 ]
+    \]
+    \[
+      \frac{dp^2}{d\tau} = e [ F^2_0 u^0 + F^2_1 u^1 + F^2_2 u^2 + F^2_3 u^3 ]
+    \]
+    \[
+      \frac{dp^3}{d\tau} = e [ F^3_0 u^0 + F^3_1 u^1 + F^3_2 u^2 + F^3_3 u^3 ]
+    \]
+    using:
+    \[
+      \frac{dp^0}{d\tau} = \frac{1}{\sqrt{1-\textbf{v}^2}} \frac{dE}{dt} = \frac{1}{\sqrt{1-\textbf{v}^2}}e\textbf{E}\dot \textbf{v} = e \textbf{E} \dot \textbf{u}
+    \]
+\end{enumerate}
+\end{document}
