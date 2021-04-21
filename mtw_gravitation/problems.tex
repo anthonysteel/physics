@@ -274,7 +274,7 @@
   Therefore the formula is justified.
 
   \textbf{c) Compute $(F_\alpha_\beta F^\alpha^\beta)_{,\mu} = ?$}
-  \[ 
+  \[
     \begin{align}
     (F_\alpha_\beta F^\alpha^\beta)_{,\mu} &= F_\alpha_\beta_{,\mu} F^\alpha^\beta + F_\alpha_\beta F^\alpha^\beta_{,\mu} \\
                                            &= (\eta_\alpha_\gamma \eta_\beta_\nu F^\alpha^\beta)_{,\mu} F^\gamma^\nu + F_\alpha_\beta F^\alpha^\beta_{,\mu} \\
@@ -282,5 +282,60 @@
                                            &= 2F_\alpha_\beta F^\alpha^\beta_{,\mu} \\
     \end{align}
   \]
+\end{enumerate}
+\chapter{Electromagnetism and Differential Forms}
+\chapter{Stress-Energy Tensor and Conservatoin Laws}
+\chapter{Accelerated Observers}
+\begin{enumerate}
+\item \textbf{A TRIP TO THE GALACTIC NUCLEUS: Compute the proper time required
+for the occupants of a rocket schip to travel the $\approx 30,000$ light-years
+to get from the Earth to the center of the Galaxy. Asusme that they maintain
+an acceleration of one earth gravity ($10^3$ cm/sec$^2$) for half the trip,
+and then decelerate at one earth gravity for the remaining of the half.}
+
+Qualitatively, the worldline of the traveller is pictured in the Figure \ref{galactic_center}.
+The travellers worldine is composed of two arcs of hyperbola $AC$ and $CB$.
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=0.50\textwidth]{images/galactic_center_minkowski.jpg}
+  \end{center}
+  \caption{The worldline of the traveller is composed of two arcs of hyperbola
+  $AC$ and $CB$. $G$ indicates the distance to the galactic center.}
+  \label{galactic_center}
+\end{figure}
+
+\[
+  \begin{align}
+    t &= g^{-1} \sinh g \tau \\
+    x &= g^{-1} \cosh g \tau
+  \end{align}
+\]
+\[
+  \tau = g^{-1}\sinh^{-1} gt
+\]
+\[
+  \begin{align}
+    x &= g^{-1} \cosh(\sinh^{-1} gt) \\
+      &= g^{-1} \sqrt{1 + (gt)^2}
+  \end{align}
+\]
+\[
+  \begin{align}
+    dx &= \frac{gt}{\sqrt{1 + (gt)^2}} dt
+  \end{align}
+\]
+\[
+  \begin{align}
+    dt' &= \sqrt{dt^2 - dx^2} \\
+        &= \sqrt{dt^2 - \Big(\frac{gt}{\sqrt{1 + (gt)^2} }\Big)^2dt^2}\\
+        &= \sqrt{1 - \frac{(gt)^2}{1 + (gt)^2}}dt\\
+        &= \sqrt{\frac{1 + (gt)^2 - (gt)^2}{1 + (gt)^2 }}dt\\
+        &= \frac{1}{\sqrt{1 + (gt)^2 }}dt\\
+  \end{align}
+\]
+Using an integral table:
+\[
+  t' = \int \frac{dt}{\sqrt{1+(gt)^2} } = \ln (gt + \sqrt{1+(gt)^2}) = \sinh^{-1}(gt)
+\]
 \end{enumerate}
 \end{document}
