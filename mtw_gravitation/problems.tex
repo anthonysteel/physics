@@ -345,9 +345,21 @@ Using an integral table:
   \item \textbf{COMPONENT MANIPULATIONS}
 
   \textbf{Derive equations:}
-  \[
+  \begin{equation}
     u^\alpha = \langle \boldsymbol{\omega}^\alpha \boldsymbol{u} \rangle
-  \]
+  \end{equation}
+  \begin{equation}
+    \sigma_\beta = \langle \boldsymbol{\sigma}, \boldsymbol{e}_\beta \rangle
+  \end{equation}
+  \begin{equation}
+    \langle \boldsymbol{\sigma}, \boldsymbol{u} \rangle = \sigma_\alpha u^\alpha
+  \end{equation}
+  \begin{equation}
+    \boldsymbol{\omega}^{\alpha'} = L^{\alpha'}_\beta \boldsymbol{\omega}^\beta 
+  \end{equation}
+  \begin{equation}
+    \sigma_{\alpha'} = \sigma_\beta L^\beta_{\alpha'}
+  \end{equation}
   Consider:
   \[
     \begin{align}
@@ -357,9 +369,6 @@ Using an integral table:
     \end{align}
   \]
   \[
-    \sigma_\beta = \langle \boldsymbol{\sigma}, \boldsymbol{e}_\beta \rangle
-  \]
-  \[
     \begin{align}
       \langle \boldsymbol{\sigma}, \boldsymbol{e}_\beta \rangle &= \sigma_\alpha \langle \boldsymbol{\omega}^\alpha, \boldsymbol{e_\beta} \rangle \\
       &= \sigma_\alpha \delta^\alpha_\beta \\
@@ -367,15 +376,28 @@ Using an integral table:
     \end{align}
   \]
   \[
-    \langle \boldsymbol{\sigma}, \boldsymbol{u} \rangle = \sigma_\alpha u^\alpha
   \]
   \[
     \begin{align}
-      \langle \boldsymbol{\sigma}, \boldsymbol{u} \rangle &= \sigma_\alpha u^\beta \langle \boldsymbol{\omega}^\alpha, \boldsymbol{e}_\beta \rangle\\
+      \langle \boldsymbol{\sigma}, \boldsymbol{u} \rangle &= \sigma_\alpha u^\beta \langle \boldsymbol{\omega}^\alpha, \boldsymbol{e}_\alpha \rangle\\
                                                           &= \sigma_\alpha u^\beta \delta^\alpha_\beta \\
-                                                          &= \sigma_\beta u^\beta 
-
+                                                          &= \sigma_\beta u^\beta
     \end{align}
+  \]
+  \[
+    \begin{align}
+    \boldsymbol{\sigma} &= \sigma_{\alpha'}\boldsymbol{\omega}^{\alpha'}\\
+                        &= \sigma_\beta \boldsymbol{\omega}^\beta \\
+                        &= \sigma_\gamma \delta^\gamma_\beta \boldsymbol{\omega}^\beta \\
+                        &= \sigma_\gamma L^\gamma_{\alpha'} L^{\alpha'}_\beta \boldsymbol{\omega}^\beta \\
+    \end{align}
+  \]
+  From inspection of components, it is clear that:
+  \[
+    \sigma_{\alpha'} = \sigma_\gamma L^\gamma_{\alpha'} 
+  \]
+  \[
+    \boldsymbol{\omega}^{\alpha'} = L^{\alpha'}_\beta \boldsymbol{\omega}^\beta
   \]
 \end{enumerate}
 \end{document}

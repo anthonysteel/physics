@@ -2,7 +2,7 @@
 A repository for doing physics. If you find any errors and would like to correct
 them, please make a pull request.
 ## Misner, Thorne and Wheeler's Gravitation
-#### Chapter 3 (7/18)
+#### Chapter 3 The Electromagnetic Field (7/18)
 - [x] 3.1
 - [x] 3.2 Transformation law for components of a tensor
 - [x] 3.3 Raising and lowering indices
@@ -21,3 +21,7 @@ them, please make a pull request.
 - [ ] 3.16 Charge Conservation
 - [ ] 3.17 Vector Potential
 - [ ] 3.18 Divergence of Electromagnetic Stress-Energy Tensor
+
+#### Chapter 9 Differential Topology (1/14)
+- [x] 9.1 Component Manipulations
+- [ ] 9.2 Components of Gradient, and Duality of Coordinate Bases
