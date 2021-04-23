@@ -21,7 +21,9 @@ them, please make a pull request.
 - [ ] 3.16 Charge Conservation
 - [ ] 3.17 Vector Potential
 - [ ] 3.18 Divergence of Electromagnetic Stress-Energy Tensor
-
+#### Chapter 6 epackage[fencedCode]{markdown}
+- [x] 6.1 A Trip to the Galactic Nucleus
+- [x] 6.2 Rocket Payload
 #### Chapter 9 Differential Topology (1/14)
 - [x] 9.1 Component Manipulations
 - [ ] 9.2 Components of Gradient, and Duality of Coordinate Bases

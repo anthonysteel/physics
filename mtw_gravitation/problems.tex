@@ -287,7 +287,9 @@
 \chapter{Stress-Energy Tensor and Conservatoin Laws}
 \chapter{Accelerated Observers}
 \begin{enumerate}
-\item \textbf{A TRIP TO THE GALACTIC NUCLEUS: Compute the proper time required
+\item \textbf{A TRIP TO THE GALACTIC NUCLEUS}
+
+\textbf{Compute the proper time required
 for the occupants of a rocket schip to travel the $\approx 30,000$ light-years
 to get from the Earth to the center of the Galaxy. Asusme that they maintain
 an acceleration of one earth gravity ($10^3$ cm/sec$^2$) for half the trip,
@@ -303,40 +305,90 @@ The travellers worldine is composed of two arcs of hyperbola $AC$ and $CB$.
   $AC$ and $CB$. $G$ indicates the distance to the galactic center.}
   \label{galactic_center}
 \end{figure}
+It is clear geometrically that the total time required for the trip to the
+center will be double the time to the middle of galaxy because of the symmetry
+of accelerations/decelerations. The benefit of handling the situation this
+way is we can use the equations derived for a positive acceleration.
 
+
+As stated:
+\begin{equation}
+    t = g^{-1} \sinh g \tau
+\end{equation}
+\begin{equation}
+    x = g^{-1} \cosh g \tau \label{a_dis}
+\end{equation}
+describe the worldline of an accelerated observer in the reference frame of an inertial observer
+with respect to $x^1$, the direction of acceleration. Invert Equation \ref{a_dis}:
+\[
+  \tau = g^{-1} \cosh^{-1} gx
+\]
+Reinserting dimensional units gives:
+\[
+  \tau = c g^{-1} \cosh^{-1} gxc^{-2}
+\]
+Substituting $x=15000$ light-years gives $\tau \approx 12.25$ years for half the
+trip, and $\tau \approx 24.5$ years for the full trip.
+
+\item \textbf{ROCKET PAYLOAD}
+
+\textbf{What fraction of the initial mass of the rocket can be payload for the
+journey considered in exercise 1? Assume an ideal rocket that converts rest
+mass into radiation and ejects the radiation out the back of the rocket with
+100 per cent efficiency and perfect collimation.}
+
+Consider the 4-momentum of the rocket:
+\[
+  mu^\alpha = m(u^t, u^x)
+\]
+$u^x$ is the momentum in the direction of travel and $u^t$ is mass-energy of
+the rocket. The change in the mass-energy is the radiation ejected from
+the rocket, and it is equal to the negative of the change in momentum of the
+rocket. A decrease in mass-energy results in an increase of momentum in the
+$x$ direction and vice-versa. Therefore:
 \[
   \begin{align}
-    t &= g^{-1} \sinh g \tau \\
-    x &= g^{-1} \cosh g \tau
+    \frac{d}{d\tau}(mu^t) &= -\frac{d}{d\tau}(m u^x) \\
+    \frac{dm}{d\tau} u^t + m \frac{du^t}{d\tau}&= - (\frac{dm}{d\tau} u^x + m \frac{du^x}{d\tau}) \\
+    (u^t + u^x)\frac{dm}{d\tau} &= - m (\frac{du^t}{d\tau}+ \frac{du^x}{d\tau}) \\
+    (u^t + u^x)\frac{dm}{d\tau} &= - m \frac{d}{d\tau}(u^t+u^x) \\
+    \frac{1}{m}\frac{dm}{d\tau} &=  \frac{1}{(u^t + u^x)}\frac{d}{d\tau}(u^t+u^x) \\
   \end{align}
 \]
-\[
-  \tau = g^{-1}\sinh^{-1} gt
-\]
+This equation can be integrated as:
 \[
   \begin{align}
-    x &= g^{-1} \cosh(\sinh^{-1} gt) \\
-      &= g^{-1} \sqrt{1 + (gt)^2}
+    \ln\frac{m}{m_0} &= - \ln(u^t+u^x) \\
+    \frac{m}{m_0} &= \frac{1}{u^t+u^x} \\
+    m &= \frac{1}{u^t+u^x}m_0 \\
   \end{align}
 \]
+Remembering that:
+\[
+  u^t = \frac{dt}{d\tau} = \frac{d}{d\tau} (g^{-1} \sinh g\tau) = \cosh g\tau
+\]
+\[
+  u^x = \frac{dx}{d\tau} = \frac{d}{d\tau} (g^{-1} \cosh g\tau) = \sinh g\tau
+\]
+Substituting and symplifying:
 \[
   \begin{align}
-    dx &= \frac{gt}{\sqrt{1 + (gt)^2}} dt
+    m &= \frac{1}{\cosh g\tau +\sinh g\tau }m_0 \\
+      &= \frac{2}{e^{g \tau} + e^{-g \tau} + e^{g \tau} - e^{-g \tau}} m_0\\
+      &= \frac{2}{2 e^{g\tau}} m_0\\
+      &= e^{-g\tau} m_0\\
   \end{align}
 \]
+which for $\tau \approx 12.25$ years times 2 gives:
 \[
-  \begin{align}
-    dt' &= \sqrt{dt^2 - dx^2} \\
-        &= \sqrt{dt^2 - \Big(\frac{gt}{\sqrt{1 + (gt)^2} }\Big)^2dt^2}\\
-        &= \sqrt{1 - \frac{(gt)^2}{1 + (gt)^2}}dt\\
-        &= \sqrt{\frac{1 + (gt)^2 - (gt)^2}{1 + (gt)^2 }}dt\\
-        &= \frac{1}{\sqrt{1 + (gt)^2 }}dt\\
-  \end{align}
+  m = 6.5 * 10^{-6}m_0
 \]
-Using an integral table:
-\[
-  t' = \int \frac{dt}{\sqrt{1+(gt)^2} } = \ln (gt + \sqrt{1+(gt)^2}) = \sinh^{-1}(gt)
-\]
+\item \textbf{TWIN PARADOX}
+
+  \textbf{(a) Show that, of all timelike word lines connecting two events A and
+  B, the one with the longest lapse of proper time is the unacccelerated one.
+  Hint: perform the calculation in the inertial frame of the unaccelerated
+  world line.}
 \end{enumerate}
 \chapter{Incompatibility of Gravity and Special Relativity}
 \chapter{Differential Geometry: An Overview}
@@ -355,7 +407,7 @@ Using an integral table:
     \langle \boldsymbol{\sigma}, \boldsymbol{u} \rangle = \sigma_\alpha u^\alpha
   \end{equation}
   \begin{equation}
-    \boldsymbol{\omega}^{\alpha'} = L^{\alpha'}_\beta \boldsymbol{\omega}^\beta 
+    \boldsymbol{\omega}^{\alpha'} = L^{\alpha'}_\beta \boldsymbol{\omega}^\beta
   \end{equation}
   \begin{equation}
     \sigma_{\alpha'} = \sigma_\beta L^\beta_{\alpha'}
@@ -394,10 +446,45 @@ Using an integral table:
   \]
   From inspection of components, it is clear that:
   \[
-    \sigma_{\alpha'} = \sigma_\gamma L^\gamma_{\alpha'} 
+    \sigma_{\alpha'} = \sigma_\gamma L^\gamma_{\alpha'}
   \]
   \[
     \boldsymbol{\omega}^{\alpha'} = L^{\alpha'}_\beta \boldsymbol{\omega}^\beta
+  \]
+\item \textbf{COMPONENTS OF GRADIENT, AND DUALITY OF CORDINATE BASES}
+
+  \textbf{In an arbitrary basis, define $f_{,\alpha}$ by the expansion:}
+  \[
+    \boldsymbol{d}f = f_{,\alpha} \boldsymbol{\omega}^\alpha
+  \]
+  \textbf{Then combine equations:}
+  \[
+    \sigma_\beta = \langle \boldsymbol{\sigma}, \boldsymbol{e}_\beta \rangle
+  \]
+  \textbf{and:}
+  \[
+    \langle \boldsymbol{d} f, \boldsymbol{u} \rangle = \partial_{\boldsymbol{u}} f = \boldsymbol{u}[f]
+  \]
+  \textbf{to obtain the method:}
+  \[
+    f_{,\alpha} = \partial_{\alpha} f = \boldsymbol{e}_\alpha [f]
+  \]
+  \textbf{Finally, combine equations:}
+  \[
+    \langle \boldsymbol{d} f, \boldsymbol{u} \rangle = \partial_{\boldsymbol{u}} f = \boldsymbol{u}[f]
+  \]
+  \textbf{and:}
+  \[
+    f_{,\alpha} = \partial_{\alpha} f = \boldsymbol{e}_\alpha [f]
+  \]
+  \textbf{to show that the bases $\boldsymbol{d}x^\alpha$ and $\partial / \partial x^\beta$ are the duals of each other.}
+  Consider:
+  \[
+    \begin{align}
+      \langle \boldsymbol{d}f, \boldsymbol{u} \rangle &= f_{,\alpha} u^\beta \langle \boldsymbol{\omega}^\alpha, \boldsymbol{e}_\beta \rangle \\
+                                                      &= f_{,\alpha} u^\beta \delta^\alpha_\beta \\
+                                                      &= f_{,\alpha} u^\alpha
+    \end{align}
   \]
 \end{enumerate}
 \end{document}
