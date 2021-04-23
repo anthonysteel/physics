@@ -12,7 +12,7 @@
 \begin{enumerate}
 \item
 	\textbf{A tube of mass $M$ and length $l$ is free to swing around a pivot at
-one end. A mass $m$ is positioned inside the (fricitonless) tube at this end.
+one end. A mass $m$ is positioned inside the (frictionless) tube at this end.
 The tube is held horizontal and then released. Let $\theta$ be the angle of the
 tube with respect to the horizontal, and let $x$ be the distance the mass has
 traveled along the tube. Find the Euler-Lagrange equations for $\theta$ and $x$,
@@ -93,12 +93,12 @@ Finding the Euler-Lagrange equations for $x$:
 \]
 \[
 \begin{align}
-\frac{\partial \mathcal{L}}{\partial x} &= m x \dot{\theta}^2 + mg\cos\theta 
+\frac{\partial \mathcal{L}}{\partial x} &= m x \dot{\theta}^2 + mg\cos\theta
 \end{align}
 \]
 \[
 \begin{align}
- \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial\dot{x}} = \frac{\partial \mathcal{L}}{\partial x} \Rightarrow \ddot{x} &= x \dot{\theta}^2 + g \cos \theta 
+ \frac{d}{dt} \frac{\partial \mathcal{L}}{\partial\dot{x}} = \frac{\partial \mathcal{L}}{\partial x} \Rightarrow \ddot{x} &= x \dot{\theta}^2 + g \cos \theta
 \end{align}
 \]
 and $\theta$:
@@ -121,19 +121,63 @@ Therefore the Euler Lagrange equations are:
 m \frac{d}{dt}(x^2\dot{\theta}) + \frac{1}{3} Ml^2 \ddot{\theta} = -g (mx + \frac{Ml}{2}) \sin \theta \label{el_theta}
 \]
 \[
-\ddot{x} = x \dot{\theta}^2 \label{el_x}
+\ddot{x} = x \dot{\theta}^2 \label{el_x} + g \cos \theta
 \]
 Reparameterizing in terms of $\eta$ and $r=\frac{m}{M}$:
 \begin{equation}
 r \frac{d}{dt}(\eta^2\dot{\theta}) + \frac{1}{3}\ddot{\theta} = -\frac{g}{l} (\frac{rx}{l} + \frac{1}{2}) \sin \theta \label{el_eta}
 \end{equation}
 \begin{equation}
-\ddot{\eta} = \eta \dot{\theta}^2 \label{el_theta} + \frac{g}{l}\cos \theta 
+\ddot{\eta} = \eta \dot{\theta}^2 \label{el_theta} + \frac{g}{l}\cos \theta
 \end{equation}
 are the Euler-Lagrange equations.
 
+\section{Dimensional analysis}
+$\eta$ is dimensionless. The dimensional quantities in the problem are $m$,
+$M$, $l$, $g$. To get a dimensonless number, the mass terms would have
+to cancel in a ratio, but you could not cancel $l$ with $g$. You need to introduce
+another quantity which has dimensions of time. Therefore we could also introduce
+the frequency $\omega$ and write:
+\[
+  \begin{align}
+    [\eta] &\propto [m]^a [M]^b [l]^c [g]^d [\omega]^e \\
+           &\propto (\text{mass})^a (\text{mass})^b (\text{length})^c (\frac{\text{length}}{\text{time}^2})^d (\frac{1}{\text{time}})^e
+  \end{align}
+\]
+Giving the equations:
+\[
+  \begin{align}
+    a + b &= 0 \Rightarrow a = -b\\
+    c + d &= 0 \Rightarrow c = -d\\
+    -2d-e &= 0 \Rightarrow e = -2d
+  \end{align}
+\]
+and implying:
+\[
+  \eta \propto \frac{m}{M}\frac{l}{g}\omega^2
+\]
+However, the frequency of an oscillator is:
+\[
+  \omega^2 \propto \frac{g}{l} f^2(\theta)
+\]
+So dimensional analysis would imply that:
+\[
+  \eta \propto \frac{m}{M}
+\]
+meaning that it should not depend on the length of the tube.
+
+\section{Asymptotic Behaviour of Solutions}
+Does the mass exit the tube? If $\eta \propto m / M$ is correct, then the mass
+would exit the tube if $m > M$.
+
+In this case, the mass exits the bottom of the tube and the system
+essentially decouples. After that, the mass is simply in free fall in a
+gravitational potential and the tube executes harmonic motion.
+
+If the $\eta < 1$ when the tube is vertical, the mass never exits the tube.
+
 \section{Approximations}
-Though the equations of motion cannot be solved exactly, it would be nice to 
+Though the equations of motion cannot be solved exactly, it would be nice to
 determine whether $\eta(t_\text{vertical})$ depends on $l$ in some approximation.
 To determine this we need an equation for $\eta$ by solving the $\eta$ equation
 of motion.
@@ -162,7 +206,7 @@ where $\omega^2 = 3 g / 2 l$.
 Consider the initial conditions:
 \[
   t_\text{vertical} = \frac{T}{2} = \frac{1}{2} \frac{2\pi}{\omega} = \frac{\pi}{\omega} = \frac{2\pi}{3}\sqrt{\frac{l}{g}}
-\]  
+\]
 \[
  \theta(t_\text{vertical}) = 0
 \]
@@ -190,7 +234,7 @@ Taking a time derivative:
 We are interested in the time $t = t_\text{vertical} + \delta$ where $\delta$ is
 small. In this small region of time:
 \[
-  \theta (\delta) = A\omega \delta 
+  \theta (\delta) = A\omega \delta
 \]
 \[
   \dot{\theta} (\delta) = A \omega
