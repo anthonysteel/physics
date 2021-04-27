@@ -5,10 +5,18 @@
 \usepackage{amsmath, amssymb}
 
 \begin{document}
-\title{Chapter 2 Problems}
+\title{Morin's Classical Mechanics}
 \author{Anthony Steel}
 \date{\today}
 \maketitle
+\chapter{}
+\chapter{}
+\chapter{}
+\chapter{}
+\chapter{}
+\chapter{}
+\chapter{}
+\chapter{}
 \begin{enumerate}
 \item
 	\textbf{A tube of mass $M$ and length $l$ is free to swing around a pivot at
@@ -258,5 +266,70 @@ and:
   x(t) = \sum_{n=0}^\infty b_n (t-t_0)^n
 \]
 Therefore:
+\end{enumerate}
+\chapter{}
+\chapter{}
+\chapter{Relativity (Kinematics)}
+\begin{enumerate}
+  \item \textbf{Effectively speed c}
+
+  \textbf{A rocket flies between two planets that are one light-year-apart. What
+  should the rocket's speed be so that time elapsed on the captain's watch is
+  one year?}
+
+  Let the time $t'$ be the time elapsed on the captain's watch and $t$ be the
+  time observed by an external observer at rest with respect to the two planets.
+
+  In this frame of reference:
+  \[
+  t = \gamma t' = \frac{t'}{\sqrt{1 - \frac{v^2}{c^2}}}
+  \]
+  The placement of $\gamma$ makes sense because the external observer will
+  see the captain's watch running slower than the captain does.
+
+  The time it takes $t$ for the rocket to travel between the planet will be
+  the distance divided by the rocket's velocity:
+  \[
+    t = \frac{d}{v}
+  \]
+  Equating gives:
+  \[
+    \begin{align}
+      \frac{d}{v} &= \frac{t'}{\sqrt{1 - \frac{v^2}{c^2}}} \\
+      \frac{d^2}{v^2} &= \frac{t'^2}{1 - \frac{v^2}{c^2}} \\
+      \frac{d^2}{v^2}(1-\frac{v^2}{c^2}) &= t'^2\\
+      d^2&= t'^2v^2+\frac{v^2d^2}{c^2}\\
+      \frac{d^2}{t'^2}&= v^2(1 +\frac{d^2}{t'^2c^2})\\
+      v^2&= \frac{d^2}{t'^2}\frac{1}{1 +\frac{d^2}{t'^2c^2}}\\
+    \end{aling}
+  \]
+  Remembering that:
+  \[
+    \frac{d}{t'} = \frac{c * \text{year}}{\text{year}} = c
+  \]
+  and substituting:
+  \[
+    v^2 = \frac{1}{2}c^2 \\
+  \]
+  \[
+    v = \frac{1}{\sqrt{2}}c \\
+  \]
+  \item \textbf{A passing train}
+
+  \textbf{A train of length $15$ cs moves at a speed of $3c/5$. How much time
+  does it take to pass a person standing on the ground (as measured by that
+  person)? Solve this by working in the frame of the person, and then again
+  by working in the frame of the train}
+
+  The person standing on the ground views the train to be length contracted.
+  Let $l'$ be the proper length of the train and $l$ be the length observed
+  by the person standing on the ground, then:
+  \[
+    l = \frac{l'}{\gamma}
+  \]
+  The time it takes for the train to pass is:
+  \[
+    t = \frac{l}{v} = \frac{l'}{v\gamma} = \frac{75 c}{3c}\frac{1}{1 - \frac{9}{25}}* \text{s} \approx 117 \text{s}
+  \]
 \end{enumerate}
 \end{document}
