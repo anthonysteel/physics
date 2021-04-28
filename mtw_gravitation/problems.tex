@@ -385,10 +385,76 @@ which for $\tau \approx 12.25$ years times 2 gives:
 \]
 \item \textbf{TWIN PARADOX}
 
-  \textbf{(a) Show that, of all timelike word lines connecting two events A and
-  B, the one with the longest lapse of proper time is the unacccelerated one.
+  \textbf{(a) Show that, of all timelike word lines connecting two events $A$ and
+  $B$, the one with the longest lapse of proper time is the unacccelerated one.
   Hint: perform the calculation in the inertial frame of the unaccelerated
   world line.}
+
+  Consider the proper time defined by:
+  \[
+    \begin{align}
+      \tau &= \int_A^B \sqrt{-\eta_\mu_\nu \frac{dx^\mu}{d\lambda} \frac{dx^\nu}{d\lambda}} d \lambda\\
+    \end{align}
+  \]
+  The problem amounts to varying the proper time and showing that :
+  \[
+    \delta \tau = 0
+  \]
+  implies no 4-acceleration (i.e. $d^2x^\nu/d\tau^2 = 0$). This problem should be familiar from the calculus of
+  variations. The condition for $\delta \tau = 0$ is that $L$ must satisfy
+  Lagrange's equations:
+  \[
+    \frac{d}{d\lambda} \frac{\partial L}{\partial \dot{x}^\gamma} = \frac{\partial L}{\partial x^\gamma}
+  \]
+  where $\dot{x}^\gamma = dx^\gamma/d\lambda$ and :
+  \[
+    L = \sqrt{-\eta_\mu_\nu \frac{dx^\mu}{d\lambda} \frac{dx^\nu}{d\lambda}}
+  \]
+  Therefore:
+  \[
+  \begin{align}
+    \frac{\partial L}{\partial x^\gamma} &= -\frac{1}{2L}\frac{\partial}{\partial x^\gamma}\Big(\eta_{\mu\nu} \frac{dx^\mu}{d\lambda} \frac{dx^\nu}{d\lambda} \Big) \\
+                                         &=-\frac{1}{2L}\Big(\frac{\partial\eta_{\mu\nu}}{\partial x^\gamma} \frac{dx^\mu}{d\lambda} \frac{dx^\nu}{d\lambda} + 2\eta_{\mu\nu} \frac{\partial}{\partial x^\gamma} \Big( \frac{dx^\mu}{ d\lambda} \Big) \frac{dx^\nu}{d\lambda} \Big)\\
+                                         &=-\frac{1}{2L}\Big(\frac{\partial\eta_{\mu\nu}}{\partial x^\gamma} \frac{dx^\mu}{d\lambda} \frac{dx^\nu}{d\lambda} + 2\eta_{\mu\nu} \frac{d}{d\lambda} \Big( \frac{\partial x^\mu}{ \partial x^\gamma} \Big) \frac{dx^\nu}{d\lambda} \Big)\\
+                                         &=-\frac{1}{2L}\Big(\frac{\partial\eta_{\mu\nu}}{\partial x^\gamma} \frac{dx^\mu}{d\lambda} \frac{dx^\nu}{d\lambda} + 2\eta_{\mu\nu} \frac{d}{d\lambda} \delta^\nu_\gamma \frac{dx^\nu}{d\lambda} \Big)\\
+                                         &=-\frac{1}{2L}\frac{\partial\eta_{\mu\nu}}{\partial x^\gamma} \frac{dx^\mu}{d\lambda} \frac{dx^\nu}{d\lambda} \\
+                                         &= 0
+  \end{align}
+  \]
+  \[
+    \begin{align}
+      \frac{d}{d\lambda} \frac{\partial L}{\partial \dot{x}^\gamma} &= \frac{d}{d\lambda} \Big( -\frac{1}{2L} \frac{\partial}{\partial \dot{x}^\gamma}\Big(\eta_{\mu\nu} \frac{dx^\mu}{d\lambda} \frac{dx^\nu}{d\lambda} \Big) \Big)\\
+                                                                    &= \frac{d}{d\lambda} \Big( -\frac{1}{2L} \Big(\frac{\partial\eta_{\mu\nu}}{\partial \dot{x}^\gamma}\frac{dx^\mu}{d\lambda} \frac{dx^\nu}{d\lambda} + \eta_{\mu\nu} \frac{\partial\dot{x}^\mu}{\partial\dot{x}^\gamma} \dot{x}^\nu + \eta_{\mu\nu} \dot{x}^\mu \frac{\partial\dot{x}^\nu}{\partial\dot{x}^\gamma} \Big) \Big) \\
+                                                                    &= \frac{d}{d\lambda} \Big( -\frac{1}{2L} \Big(\frac{\partial\eta_{\mu\nu}}{\partial \dot{x}^\gamma}\frac{dx^\mu}{d\lambda} \frac{dx^\nu}{d\lambda} + \eta_{\mu\nu} \delta^\mu_\gamma \dot{x}^\nu + \eta_{\mu\nu} \dot{x}^\mu \delta^\nu_\gamma \Big) \Big) \\
+                                                                    &= \frac{d}{d\lambda} \Big( -\frac{1}{2L} \Big(\frac{\partial\eta_{\mu\nu}}{\partial \dot{x}^\gamma}\frac{dx^\mu}{d\lambda} \frac{dx^\nu}{d\lambda} + 2 \eta_{\gamma\nu} \dot{x}^\nu \Big)\Big)\\
+                                                                    &= - \frac{d}{d\lambda} \Big(\frac{1}{L}\eta_{\gamma\nu} \dot{x}^\nu \Big)
+    \end{align}
+  \]
+  Now from the equation for $\tau$ it is clear that: 
+  \[
+    \frac{d\tau}{d\lambda} = L
+  \]
+  and therefore for a function $f(\tau(\lambda))$:
+  \[
+    \frac{df}{d\lambda} = \frac{df}{d\tau} \frac{d\tau}{d\lambda} = L \frac{df}{d\tau}
+  \]
+  We can use this relationship to exchange differentiation with respect to $\lambda$
+  for differentiation with respect to $\tau$, such that:
+  \[
+    \begin{align}
+      \frac{d}{d\lambda} \frac{\partial L}{\partial \dot{x}^\gamma} &= - \frac{d}{d\lambda} \Big(\frac{1}{L}\eta_{\gamma\nu} \frac{dx^\nu}{d\lambda} \Big) \\
+                                                                    &= - L\frac{d}{d\tau} \Big(\frac{1}{L}\eta_{\gamma\nu} \Big(L\frac{dx^\nu}{d\tau} \Big)\Big) \\
+                                                                    &= - L\eta_{\gamma\nu} \frac{d^2x^\nu}{d\tau^2}
+    \end{align}
+  \]
+  Combining the two results gives:
+  \[
+    \frac{d}{d\lambda} \frac{\partial L}{\partial \dot{x}^\gamma} = \frac{\partial L}{\partial x^\gamma} \Rightarrow L \eta_{\gamma\nu} \frac{d^2x^\nu}{d\tau^2} = 0
+  \]
+  Because $\eta_{\gamma\nu}$ is non-zero and $L$ is non-zero for timelike curves, the condition for $\delta \tau$ to be zero is:
+  \[
+    \frac{d^2x^\nu}{d\tau^2} = 0
+  \]
 \end{enumerate}
 \chapter{Incompatibility of Gravity and Special Relativity}
 \chapter{Differential Geometry: An Overview}
