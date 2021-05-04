@@ -131,9 +131,9 @@ m \frac{d}{dt}(x^2\dot{\theta}) + \frac{1}{3} Ml^2 \ddot{\theta} = -g (mx + \fra
 \[
 \ddot{x} = x \dot{\theta}^2 \label{el_x} + g \cos \theta
 \]
-Reparameterizing in terms of $\eta$ and $r=\frac{m}{M}$:
+Reparameterizing in terms of $\eta = x / l $ and $r=\frac{m}{M}$:
 \begin{equation}
-r \frac{d}{dt}(\eta^2\dot{\theta}) + \frac{1}{3}\ddot{\theta} = -\frac{g}{l} (\frac{rx}{l} + \frac{1}{2}) \sin \theta \label{el_eta}
+r \frac{d}{dt}(\eta^2\dot{\theta}) + \frac{1}{3}\ddot{\theta} = -\frac{g}{l} (r\eta + \frac{1}{2}) \sin \theta \label{el_eta}
 \end{equation}
 \begin{equation}
 \ddot{\eta} = \eta \dot{\theta}^2 \label{el_theta} + \frac{g}{l}\cos \theta
@@ -194,6 +194,25 @@ of motion.
 The equations are coupled (i.e. $\theta$ appears in the equation of motion for
 $\eta$ and $\eta$ appears in the equation of motion for $\theta$) so a useful
 approximation would be one that decouples at least one of them.
+
+\subsection{Constant $\eta$}
+Consider the effect of $\eta$ being constant (i.e
+the mass has been fixed inside the tube). The equation of motion for $\theta$ is:
+\[
+  (r \eta^2 + \frac{1}{3}) \ddot{\theta} = -\frac{g}{l} (r \eta + \frac{1}{2}) \sin\theta
+\]
+This can be solved in the small angle approximation as:
+\[
+  \ddot{\theta} = - \frac{g}{l} \frac{r\eta + \frac{1}{2}}{r\eta^2 + \frac{1}{3}}\theta
+\]
+giving:
+\[
+  \theta(t) = A \cos \omega t
+\]
+where:
+\[
+  \omega^2 = \frac{g}{l} \frac{r\eta + \frac{1}{2}}{r\eta^2 + \frac{1}{3}}
+\]
 
 \subsection{Small mass approximation $m \ll M$}
 $m \ll M$ is equivalent to the condition $r \ll 1$. Let us assume that $r$ is
@@ -256,16 +275,73 @@ $a = -A^2 \omega^2$, $C_0 = \frac{g}{l}$.
   \eta(t) = ( \frac{g}{-}
 \]
 
-\subsection{Taylor Series Expansion}
-Taylor expand $\eta$ and $x$ as:
+\subsection{Perturbation Series}
 \[
-  \eta(t) = \sum_{n=0}^\infty a_n (t-t_0)^n
+r \frac{d}{dt}(\eta^2\dot{\theta}) + \frac{1}{3}\ddot{\theta} = -\frac{g}{l} (r\eta + \frac{1}{2}) \sin \theta
 \]
-and:
 \[
-  x(t) = \sum_{n=0}^\infty b_n (t-t_0)^n
+\ddot{\eta} = \eta \dot{\theta}^2 \label{el_theta} + \frac{g}{l}\cos \theta
+\]
+Take $\theta$ to be small and let $\epsilon = r$:
+\[
+\epsilon \frac{d}{dt}(\eta^2\dot{\theta}) + \frac{1}{3}\ddot{\theta} = -\frac{g}{l} (\epsilon \eta + \frac{1}{2}) \theta
+\]
+\[
+\ddot{\eta} = \eta \dot{\theta}^2 \label{el_theta} + \frac{g}{l}
+\]
+Let:
+\[
+  \theta = \sum_{n = 0}^{\infty} a_n(t) \epsilon^n = a_0 + a_1 \epsilon
+\]
+\[
+  \begin{align}
+    \epsilon \frac{d}{dt}(\eta^2(\dot{a_0} + \dot{a_1}\epsilon)) + \frac{1}{3}(\ddot{a_0} + \ddot{a_1} \epsilon) &= -\frac{g}{l} (\epsilon \eta + \frac{1}{2}) (a_0 + a_1 \epsilon)  \\
+  \frac{d}{dt}(\dot{a}_1\eta^2)\epsilon^2 +   ( \frac{d}{dt}(\dot{a}_0\eta^2)+ \ddot{a}_0 )\epsilon +  \frac{1}{3}\ddot{a}_0 &= -\frac{g}{l} (a_1 \eta \epsilon^2 + (a_0\eta + \frac{1}{2} a_1) \epsilon + \frac{1}{2}a_0)
+  \end{align}
+\]
+Comparing terms of zeroth order:
+\[
+\ddot{a}_0 =  - \frac{3}{2} \frac{g}{l} a_0
 \]
 Therefore:
+\[
+  a_0 = A \cos\omega_0 t
+\]
+where $\omega_0^2 = 3 g / 2 l$.
+Now comparing terms of first order:
+\[
+  \begin{align}
+    \frac{d}{dt}(\dot{a}_0\eta^2)+ \ddot{a}_0 &= -\frac{g}{l}(a_0\eta + \frac{1}{2} a_1) \\
+    a_1 &= \frac{l}{g} (\frac{d}{dt}(\dot{a}_0\eta^2)+ \ddot{a}_0 ) + a_0\eta \\
+        &= \frac{l}{g} (\ddot{a}_0\eta^2+\dot{a}_0 \frac{d}{dt}(\eta^2)+ \ddot{a}_0 ) + a_0\eta  \\
+        &= \frac{l}{g} (\ddot{a}_0(1 + \eta^2) +\dot{a}_0 \frac{d}{dt}(\eta^2)) + a_0\eta  \\
+        &= \Big(-\frac{3}{2}+\eta -\frac{3}{2}\eta^2 + \omega_0 \frac{l}{g} \frac{d}{dt}(\eta^2) \Big)a_0
+  \end{align}
+\]
+Simplifying $a_1^2$:
+\[
+  \begin{align}
+    a_1^2 &= \Big(-\frac{3}{2}+\eta -\frac{3}{2}\eta^2 + \omega_0 \frac{l}{g} \frac{d}{dt}(\eta^2) \Big)^2 a_0^2 \\
+          &= \Big(-\frac{3}{2}+\eta -\frac{3}{2}\eta^2 + \omega_0 \frac{l}{g} \frac{d}{dt}(\eta^2) \Big)^2 a_0^2 \\
+          &\approx \Big(-\frac{3}{2}+\eta + \omega_0 \frac{l}{g} \frac{d}{dt}(\eta^2) \Big)^2 a_0^2 \\
+  \end{align}
+\]
+\[
+a_1^2 \approx (\frac{9}{4}-3\eta + 3 \omega_0 \frac{l}{g} \frac{d}{dt}(\eta^2))a_0^2
+\]
+Giving:
+\[
+  \theta(t) = a_0 + a_1 r
+\]
+Substituting into:
+\[
+  \begin{align}
+    \ddot{\eta} &= \eta \dot{\theta}^2 + \frac{g}{l} \\
+                &= \eta (a_0^2 + a_0 a_1 r + a_1^2 r^2) + \frac{g}{l} \\
+                &= \eta (a_0^2 + \frac{3}{2} a_0^2 r + \frac{9}{4}a_0^2 r^2) + \frac{g}{l} \\
+                &= \eta (1 + \frac{3}{2} r + \frac{9}{4} r^2) a_0^2 + \frac{g}{l} \\
+  \end{align}
+\]
 \end{enumerate}
 \chapter{}
 \chapter{}
@@ -329,7 +405,80 @@ Therefore:
   \]
   The time it takes for the train to pass is:
   \[
-    t = \frac{l}{v} = \frac{l'}{v\gamma} = \frac{75 c}{3c}\frac{1}{1 - \frac{9}{25}}* \text{s} \approx 117 \text{s}
+    t = \frac{l}{v} = \frac{l'}{v\gamma} = 15 \text{cs} * \frac{5}{3\text{c}} * \sqrt{1 - (\frac{3}{5})^2} = 20\text{s}
   \]
+  Now in the frame of the train, the time it takes for the person to pass is:
+  \[
+    t' = \frac{l'}{v}
+  \]
+  The equation relating the time in the train frame $t'$ to the time in the
+  person's frame $t$ is:
+  \[
+    t' = \gamma t \implies t = \frac{t'}{\gamma} = \frac{l'}{v\gamma} = 20\text{s}
+  \]
+  \item \textbf{Overtaking a train}
+
+  \textbf{Train $A$ has length $L$. Train $B$ moves past $A$ (on a parallel
+    track, facing the same direction) with relative speed $4c / 5$. The length
+    of $B$ is such that $A$ says that the front of the train coincides at
+    exactly the same time as the backs coincide. What is the time difference
+    between the fronts coinciding and the backs coinciding, as measured by
+    $B$?}
+
+    In train $A$'s frame, train $B$ has been length contracted by a factor of
+    $\gamma$. This means that the proper length of train $B$ will be larger
+    than train $A$ by a factor $\gamma$.
+    \[
+      L_a = L \text{ and } L_b = \gamma L
+    \]
+    As train $A$ comes by in $B$'s frame, train $B$ views $A$ to be length
+    contracted:
+    \[
+      L_a' = \frac{L}{\gamma}
+    \]
+    Therefore the difference in length between the two trains as seen in train
+    B's frame is:
+    \[
+      \Delta L = \gamma L - \frac{L}{\gamma} = L (\gamma - \frac{1}{\gamma})
+    \]
+    and the time it takes train $A$ to pass through this distance is:
+    \[
+      \Delta t = \frac{\Delta L}{v} = \frac{L}{v}(\gamma - \frac{1}{\gamma}) = \frac{v}{c^2 \sqrt{1-\frac{v^2}{c^2}} }} L = \frac{4}{3c} L
+    \]
+
+  \item \textbf{Walking on a train}
+
+    \textbf{A train of proper length $L$ and speed $3c / 5$ approaches a tunnel
+      of length $L$. At the moment the front of the train enters the tunnel, a 
+      person leaves the front of the train and walks (briskly) toward the 
+      back. She arrives at the back of the train right when it (the back) leaves
+      the tunnel.}
+
+    \textbf{a) How much time does this take in the ground frame?}
+
+    In the ground frame, the train is length contracted so that:
+    \[
+      L_\text{train} = \frac{L}{\gamma}
+    \]
+    and the distance for the end of the train to leave the tunnel
+    is:
+    \[
+      L_\text{total} = L + L_\text{train} = (1 + \frac{1}{\gamma})L
+    \]
+    The time it takes is therefore:
+    \[
+      t = \frac{L_\text{total}}{v} = (1 + \frac{1}{\gamma}) \frac{L}{v} = \frac{3L}{c} 
+    \]
+    \textbf{b) What is the person's speed with respect to the ground?}
+    \[
+      v_\text{person} = \frac{L}{t} = \frac{Lc}{3L} = \frac{c}{3}
+    \]
+    \textbf{c) How much time elapses on the person's watch?}
+
+    Let $t'$ be the time observed in the ground frame, and $t$ be the time on
+    the person watch. These two are related by:
+    \[
+      t' = \gamma t \implies t = \frac{t'}{\gamma} = \frac{3L}{c}\sqrt{1-\frac{1}{9}} = 2\sqrt{2}\frac{L}{c}
+    \]
 \end{enumerate}
 \end{document}
