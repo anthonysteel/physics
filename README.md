@@ -21,9 +21,16 @@ them, please make a pull request.
 - [ ] 3.16 Charge Conservation
 - [ ] 3.17 Vector Potential
 - [ ] 3.18 Divergence of Electromagnetic Stress-Energy Tensor
-#### Chapter 6 epackage[fencedCode]{markdown}
+#### Chapter 6 Accelerated Observers (2/9) 
 - [x] 6.1 A Trip to the Galactic Nucleus
 - [x] 6.2 Rocket Payload
 #### Chapter 9 Differential Topology (1/14)
 - [x] 9.1 Component Manipulations
 - [ ] 9.2 Components of Gradient, and Duality of Coordinate Bases
+
+## Textbook Wishlist
+- [] [Jackon's Classical Electrodynamics](http://www.fulviofrisone.com/attachments/article/475/Jackson%20J%20D%20Classical%20Electrodynamics%20(Wiley,%201962)(T)(656S).pdf)
+- [] [Ramond's Field Theory A Modern Primer](http://gr.xjtu.edu.cn/c/document_library/get_file?p_l_id=21699&folderId=2383653&name=DLFE-82651.pdf)
+- [] [Srednicki's Quantum Field Theory](https://web.physics.ucsb.edu/~mark/ms-qft-DRAFT.pdf)
+- [] [Sakurai's Advanced Quantum Mechanics](https://www.fisica.net/ebooks/quantica/Advanced%20Quantum%20Mechanics.pdf)
+- [] [The Large Scale Structure of Space-Time](https://yale.learningu.org/download/2edd46dc-7ff5-4084-8161-5b5328974fa0/E2143_The%20Large-Scale%20Structure%20of%20Spacetime%20(1973)%20-%20Hawking,%20Ellis.pdf)
