@@ -1,3 +1,4 @@
+# http://www.physics.usu.edu/Wheeler/GenRel2013/Notes/Geodesics.pdf
 import matplotlib.pyplot as plt
 import sympy as sp
 import numpy as np
