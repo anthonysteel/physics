@@ -1,6 +1,5 @@
 # http://www.physics.usu.edu/Wheeler/GenRel2013/Notes/Geodesics.pdf
 import matplotlib.pyplot as plt
-import sympy as sp
 import numpy as np
 
 def spherical_mesh(x0, y0, z0, radius):
@@ -18,10 +17,13 @@ def spherical2cartesian(theta, phi, r):
     z = r * np.cos(phi)
     return x, y, z
 
-def covariant_metric(theta, phi, r)
+def covariant_metric(theta, phi, r):
     return np.matrix(\
         [[  r**2,                         0],\
          [     0, r**2 * (np.sin(theta))**2]])
+
+def covariant_derivative():
+    return
 
 ax = plt.figure().add_subplot(projection='3d')
 
@@ -42,6 +44,5 @@ ax.plot(x, y, z, color="r", linewidth=1)
 
 x, y, z = spherical_mesh(0, 0, 0, 1)
 ax.plot_wireframe(x, y, z, alpha=0.4)
-
 
 plt.show()
