@@ -21,7 +21,7 @@ them, please make a pull request.
 - [ ] 3.16 Charge Conservation
 - [ ] 3.17 Vector Potential
 - [ ] 3.18 Divergence of Electromagnetic Stress-Energy Tensor
-#### Chapter 6 Accelerated Observers (2/9) 
+#### Chapter 6 Accelerated Observers (2/9)
 - [x] 6.1 A Trip to the Galactic Nucleus
 - [x] 6.2 Rocket Payload
 #### Chapter 9 Differential Topology (1/14)
@@ -36,7 +36,14 @@ them, please make a pull request.
 - [ ] [Hawking and Ellis' The Large Scale Structure of Space-Time](https://yale.learningu.org/download/2edd46dc-7ff5-4084-8161-5b5328974fa0/E2143_The%20Large-Scale%20Structure%20of%20Spacetime%20(1973)%20-%20Hawking,%20Ellis.pdf)
 - [ ] [Choquet-Bruhat's General Relativity and the Einstein Equations](https://www.amazon.ca/Relativity-Einstein-Equations-Mathematical-Monographs/dp/0199230722)
 - [ ] [Chandrasekhar's The Mathematical Theory of Black Holes](https://www.amazon.ca/Mathematical-Theory-International-Monographs-Physics/dp/0198512910/ref=sr_1_1?dchild=1&keywords=The+Mathematical+Theory+of+Black+Holes&qid=1620669383&s=books&sr=1-1)
-
 - [ ] [Alcubierre's 3+1 Numerical Relativity](https://www.amazon.ca/Introduction-3-1-Numerical-Relativity/dp/0199205671?asin=0199205671&revisionId=&format=4&depth=1)
-
 - [ ] [Landau's The Classical Theory of Fields](http://www.elegio.it/mc2/LandauLifshitz_TheClassicalTheoryOfFields_text.pdf)
+- [ ] [Bender's Advanced Mathematical Methods for Scientists and Engineers](https://www.amazon.ca/Advanced-Mathematical-Methods-Scientists-Engineers/dp/0387989315/?_encoding=UTF8&pd_rd_w=js4Xi&pf_rd_p=ab3c85e7-dd66-41c2-8070-fe9b2dd6dada&pf_rd_r=D94HKAEB06M1336NZ146&pd_rd_r=01728ab5-821a-4a6d-b0ec-8c76bcdbaef0&pd_rd_wg=38sc1&ref_=pd_gw_ci_mcx_mr_hp_d)
+- [ ] [Ahscroft and Mermin's Solid State Physics](https://www.amazon.ca/Solid-State-Physics-Neil-Ashcroft/dp/0030839939)
+- [ ] [Coleman's Aspects of Symmetry](https://www.amazon.ca/Aspects-Symmetry-Selected-Erice-Lectures/dp/0521318270)
+- [ ] [Born's Einstein's Theory of Relativity](https://www.amazon.ca/Einsteins-Theory-Relativity-Max-Born/dp/0486607690)
+- [ ] [Weisskopf's Physics in the Twentieth Century: Selected Essays](https://www.amazon.ca/Physics-Twentieth-Century-Selected-Essays/dp/0262230569)
+- [ ] [Lightman Press Price and Tuekolsky's Problem Book in Relativity and Gravitation](https://www.abebooks.com/servlet/BookDetailsPL?bi=30827216103&cm_sp=SEARCHREC-_-WIDGET-L-_-BDP-R&searchurl=ds%3D20%26kn%3Dproblem%2Bbook%2Bin%2Brelativity%2Band%2Bgravitation%26sortby%3D17)
+- [ ] [Schutz's Geometrical Methods of Mathematical Physics](https://www.amazon.ca/Geometrical-Methods-Mathematical-Physics-Bernard/dp/0521298873)
+- [ ] [Hamermesh Group Theory and Its Application to Physical Problems](https://www.amazon.ca/Group-Theory-Application-Physical-Problems/dp/0486661814)
+- [ ] [Chris Quigg Gauge Theories of the Strong, Weak and Electromagnetic Interactions](https://www.amazon.ca/Gauge-Theories-Strong-Electromagnetic-Interactions/dp/0691135487?asin=0691135487&revisionId=&format=4&depth=1)

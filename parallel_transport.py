@@ -42,6 +42,10 @@ theta = np.linspace(-np.pi/2, 0, 50)
 x, y, z = spherical2cartesian(theta, phi, r)
 ax.plot(x, y, z, color="r", linewidth=1)
 
+phi = np.linspace(0, np.pi/2, 10)
+x, y, z = spherical2cartesian(0, phi, 1)
+ax.quiver(x, y, z, 0, -1, 0, length=0.1, normalize=True, color='r')
+
 x, y, z = spherical_mesh(0, 0, 0, 1)
 ax.plot_wireframe(x, y, z, alpha=0.4)
 
