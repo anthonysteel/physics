@@ -23,19 +23,97 @@
       \item \textbf{Write down the metric of the cone, in terms of the
         coordinates $r$ and $\phi$.}
 
-
-        The opening angle of the cone relates the height and the 
-        raduis of the cone as:
+        The paramaterization of the cone $X(r, \phi)$ is:
+        \[
+          X(r, \phi) =
+          \begin{bmatrix}
+            r \sin\alpha \cos \phi\\
+            r \sin\alpha \sin \phi \\
+            r \cos \alpha
+          \end{bmatrix}
+        \]
+        Differentiating with respect to $r$ and $\phi$ gives:
+        \[
+          X_{,\phi} =
+          \begin{bmatrix}
+            - r \sin\alpha \sin\phi \\
+              r \sin\alpha \cos\phi \\
+              0
+          \end{bmatrix}
+        \]
+        and
+        \[
+          X_{,r} =
+          \begin{bmatrix}
+            \sin\alpha \cos \phi \\
+            \sin \alpha \sin \phi \\
+            \cos\alpha
+          \end{bmatrix}
+        \]
+        The general form of the metric in two dimensions is:
+        \[
+          ds^2 = E d\phi^2 + 2F d\phi dr + G dr^2
+        \]
+        where:
         \[
           \begin{align}
-            2\alpha &= 2\tan^{-1}(\frac{r}{h})\\
-            \frac{r}{h} &= \tan\alpha
+            E &= X_{,\phi} \cdot X_{,\phi} = r\sin^2\phi \\
+            F &= X_{,\phi} \cdot X_{,r} = 0\\
+            G &= X_{,r} \cdot X_{,r} = 1
           \end{align}
         \]
-      \item \textbf{Find the coordinate transformation $x(r,\phi_)$,
+        therefore:
+        \[
+          ds^2 = dr^2 + r\sin^2\phi d\phi^2
+        \]
+
+      \item \textbf{Find the coordinate transformation $x(r,\phi)$,
           $y(r,\phi)$ that brings the metric into the form $ds^2
         = dx^2+dy^2$. Do these coordinates cover the entire
         two-dimensional plane?}
+
+        Consider:
+        \[
+        \begin{align}
+          x(r,\phi) &= r\sin\alpha \cos\phi \\
+          y(r,\phi) &= r\sin\alpha \sin\phi
+        \end{align}
+        \]
+        Then:
+        \[
+          \frac{y}{x} = \tan\phi \to \phi = \arctan \frac{y}{x}
+        \]
+        and
+        \[
+          \begin{align}
+            r = \frac{x}{\sin\alpha \cos\phi} = \frac{x \sqrt{(\frac{y}{x})^2 + 1}}{\sin\alpha} = \frac{\sqrt{x^2 + y^2 }}{\sin\alpha}
+          \end{align}
+        \]
+        likewise:
+        \[
+          r = \frac{y}{\sin\alpha \sin\phi} = \frac{y  \sqrt{(\frac{y}{x})^2+1}}{\frac{y}{x}\sin\alpha} = \frac{\sqrt{x^2 + y^2}}{\sin\alpha}
+        \]
+        Proving that this transformation does indeed result in a metric of the
+        form $ds^2 = dx^2 + dy^2$:
+        \[
+          \begin{align}
+            d\phi &= \frac{\partial\phi}{\partial x} dx + \frac{\partial\phi}{\partial y} dy \\
+                  &= \frac{-1}{1+\frac{x^2}{y^2}} dx + \frac{1}{1+\frac{y^2}{x^2}} dy \\
+                  &= \frac{-y^2}{x^2+y^2}dx + \frac{x^2}{x^2+y^2}dy
+          \end{align}
+        \]
+        \[
+          d\phi^2 &= \frac{y^4}{(x^2+ y^2)^2} dx^2 + \frac{x^4}{(x^2+y^2)^2} dy^2 - 2 \frac{x^4y^4}{(x^2+y^2)^2}dx dy
+        \]
+        \[
+        \sin^2\phi = \frac{y^2}{x^2 +y^2}
+        \]
+        \[
+          \begin{align}
+            dr &= \frac{\partial r}{\partial x} dx + \frac{\partial r }{\partial y} dy \\\
+               &= \frac{x}{\sin\alpha\sqrt{x^2 + y^2}} dx + \frac{y}{\sin\alpha \sqrt{x^2+y^2}}dy
+          \end{align}
+        \]
       \item \textbf{Prove that any vector parallel transported along a
         circle of constant $r$ on the surface of the cone ends up rotated
         by an angle $\beta$ after a complete trip. Express $\beta$ in terms
