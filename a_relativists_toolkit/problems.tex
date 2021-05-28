@@ -22,8 +22,17 @@
     \begin{enumerate}
       \item \textbf{Write down the metric of the cone, in terms of the
         coordinates $r$ and $\phi$.}
-
-        The paramaterization of the cone $X(r, \phi)$ is:
+        Consider the metric for 3-space in spherical polar coordinates:
+        \[
+          ds^2 = dr^2 + r^2d\theta^2 + r^2\sin^2\theta d\phi^2
+        \]
+        On a cone, the cooridnate $\theta$ is half of the opening angle and is a
+        constant implying: $\theta=\alpha$ and $d\theta=d\alpha=0$. Therefore
+        the metric of the cone is:
+        \[
+          ds^2 = dr^2 + r^2\sin^2\alpha d\phi^2
+        \]
+        Shown another way, consider the paramaterization of the cone $X(r, \phi)$
         \[
           X(r, \phi) =
           \begin{bmatrix}
