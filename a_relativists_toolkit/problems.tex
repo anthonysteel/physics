@@ -66,14 +66,14 @@
         where:
         \[
           \begin{align}
-            E &= X_{,\phi} \cdot X_{,\phi} = r\sin^2\phi \\
+            E &= X_{,\phi} \cdot X_{,\phi} = r\sin^2\alpha \\
             F &= X_{,\phi} \cdot X_{,r} = 0\\
             G &= X_{,r} \cdot X_{,r} = 1
           \end{align}
         \]
         therefore:
         \[
-          ds^2 = dr^2 + r\sin^2\phi d\phi^2
+          ds^2 = dr^2 + r^2\sin^2\alpha^2 d\phi^2
         \]
 
       \item \textbf{Find the coordinate transformation $x(r,\phi)$,
@@ -81,48 +81,109 @@
         = dx^2+dy^2$. Do these coordinates cover the entire
         two-dimensional plane?}
 
-        Consider:
-        \[
-        \begin{align}
-          x(r,\phi) &= r\sin\alpha \cos\phi \\
-          y(r,\phi) &= r\sin\alpha \sin\phi
-        \end{align}
-        \]
-        Then:
-        \[
-          \frac{y}{x} = \tan\phi \to \phi = \arctan \frac{y}{x}
-        \]
-        and
+        Consider the differentials of the transformation $x(r, \phi)$ and
+        $y(r, \phi)$:
         \[
           \begin{align}
-            r = \frac{x}{\sin\alpha \cos\phi} = \frac{x \sqrt{(\frac{y}{x})^2 + 1}}{\sin\alpha} = \frac{\sqrt{x^2 + y^2 }}{\sin\alpha}
+            dx &= \frac{\partial x}{\partial r} dr + \frac{\partial x}{\partial \phi} d\phi \\
+            dy &= \frac{\partial y}{\partial r} dr + \frac{\partial y}{\partial \phi} d\phi \\
           \end{align}
         \]
-        likewise:
-        \[
-          r = \frac{y}{\sin\alpha \sin\phi} = \frac{y  \sqrt{(\frac{y}{x})^2+1}}{\frac{y}{x}\sin\alpha} = \frac{\sqrt{x^2 + y^2}}{\sin\alpha}
-        \]
-        Proving that this transformation does indeed result in a metric of the
-        form $ds^2 = dx^2 + dy^2$:
+        Therefore:
         \[
           \begin{align}
-            d\phi &= \frac{\partial\phi}{\partial x} dx + \frac{\partial\phi}{\partial y} dy \\
-                  &= \frac{-1}{1+\frac{x^2}{y^2}} dx + \frac{1}{1+\frac{y^2}{x^2}} dy \\
-                  &= \frac{-y^2}{x^2+y^2}dx + \frac{x^2}{x^2+y^2}dy
+           dx^2 + dy^2 &= \Big[ \Big(\frac{\partial x}{\partial r}\Big)^2 + \Big(\frac{\partial y}{\partial r}\Big)^2 \Big]dr^2 +
+                          \Big[ \Big(\frac{\partial x}{\partial \phi}\Big)^2 + \Big(\frac{\partial y}{\partial \phi}\Big)^2\Big] d\phi^2 +
+                          \Big(\frac{\partial x}{\partial r}\frac{\partial x}{\partial \phi} + \frac{\partial y}{\partial r}\frac{\partial y}{\partial \phi}\Big) dr d\phi \\
+                       &= dr^2 + r^2\sin^2\alpha d\phi^2
           \end{align}
         \]
+        Which gives three equations:
+        \begin{equation}
+          \label{eqn:first}
+          \Big(\frac{\partial x}{\partial r}\Big)^2 + \Big(\frac{\partial y}{\partial r}\Big)^2 = 1
+        \end{equation}
+        \begin{equation}
+          \label{eqn:second}
+          \Big(\frac{\partial x}{\partial \phi}\Big)^2 + \Big(\frac{\partial y}{\partial \phi}\Big)^2 = r^2 \sin^2\alpha
+        \end{equation}
+        \begin{equation}
+          \label{eqn:third}
+          \Big(\frac{\partial x}{\partial r}\frac{\partial x}{\partial \phi} + \frac{\partial y}{\partial r}\frac{\partial y}{\partial \phi}\Big) = 0 \to \frac{\partial x}{\partial r}\frac{\partial x}{\partial \phi} = -\frac{\partial y}{\partial r}\frac{\partial y}{\partial \phi}
+        \end{equation}
+        Make the following ansatz:
         \[
-          d\phi^2 &= \frac{y^4}{(x^2+ y^2)^2} dx^2 + \frac{x^4}{(x^2+y^2)^2} dy^2 - 2 \frac{x^4y^4}{(x^2+y^2)^2}dx dy
-        \]
-        \[
-        \sin^2\phi = \frac{y^2}{x^2 +y^2}
+          \begin{align}
+            x(r, \phi) &= r\sin\phi \\
+            y(r, \phi) &= r\cos\phi
+          \end{align}
         \]
         \[
           \begin{align}
-            dr &= \frac{\partial r}{\partial x} dx + \frac{\partial r }{\partial y} dy \\
-               &= \frac{x}{\sin\alpha\sqrt{x^2 + y^2}} dx + \frac{y}{\sin\alpha \sqrt{x^2+y^2}}dy
+            \frac{\partial x}{\partial r} &= \sin\phi \\
+            \frac{\partial y}{\partial r} &= \cos\phi \\
+            \Big(\frac{\partial x}{\partial r}\Big)^2 + \Big(\frac{\partial y}{\partial r}\Big)^2 &= \sin^2\phi + \cos^2\phi = 1
           \end{align}
         \]
+        Therefore equation \ref{eqn:first} is satisfied. To satisfy equation
+        \ref{eqn:second} modify the equations to:
+        \[
+          \begin{align}
+            x(r, \phi) &= r\sin(\phi\sin\alpha) \\
+            y(r, \phi) &= r\cos(\phi\sin\alpha)
+          \end{align}
+        \]
+        leaving the results of equation \ref{eqn:first} unchanged.
+        \[
+          \begin{align}
+            \frac{\partial x}{\partial \phi} &= r\sin\alpha \cos(\phi\sin\alpha) \\
+            \frac{\partial y}{\partial \phi} &= -r\sin\alpha \sin(\phi\sin\alpha) \\
+            \Big(\frac{\partial x}{\partial \phi}\Big)^2 + \Big(\frac{\partial y}{\partial \phi}\Big)^2 &= r^2\sin^2\alpha\sin^2(\phi\sin\alpha) + r^2\sin^2\alpha\cos^2(\phi\cos\alpha)\\
+                                                                                                        &= r^2\sin^2\alpha
+          \end{align}
+        \]
+        Therefore \ref{eqn:second} is satisfied. Checking the last equation:
+        \[
+          \begin{align}
+            \frac{\partial x}{\partial r}\frac{\partial x}{\partial \phi} &= -\frac{\partial y}{\partial r}\frac{\partial y}{\partial \phi} \\
+            r\sin\alpha \sin(\phi\sin\alpha) \cos(\phi\sin\alpha) &= - (-r\sin\alpha \cos(\phi\sin\alpha) \sin(\phi\sin\alpha)) \\
+          \end{align}
+        \]
+        Therefore the transformations that bring the metric into the form
+        $ds^2 = dx^2 + dy^2$ are:
+        \[
+          \begin{align}
+            x(r, \phi) &= r\sin(\phi\sin\alpha) \\
+            y(r, \phi) &= r\cos(\phi\sin\alpha)
+          \end{align}
+        \]
+        Proof:
+        \[
+          \begin{align}
+            dx &= \sin(\phi\sin\alpha) dr + r\sin\alpha\cos(\phi\sin\alpha) d\phi\\
+            dy &= \cos(\phi\sin\alpha) dr - r\sin\alpha\sin(\phi\sin\alpha) d\phi\\
+          \end{align}
+        \]
+        and:
+        \[
+          \begin{align}
+            ds^2 &= dx^2 + dy^2\\
+                 &=\sin^2(\phi\sin\alpha)dr^2 + r^2\sin^2\alpha \cos^2(\phi\sin\alpha)d\phi^2 + 2r\sin\alpha\sin(\phi\sin\alpha)\cos(\phi\sin\alpha) dr d\phi\\
+                 &+ \cos^2(\phi\sin\alpha)dr^2 +r^2\sin^2\alpha \sin^2(\phi\sin\alpha)d\phi^2 - 2rs\sin\alpha\sin(\phi\sin\alpha)\cos(\phi\sin\alpha) dr d\phi\\
+                 &= dr^2 + r^2\sin^2\alpha d\phi^2
+          \end{align}
+        \]
+        Consider the inverted transfromation:
+        \[
+          \begin{align}
+            \phi &= \frac{1}{\sin\alpha} \arctan\Big(\frac{y}{x}\Big) \\
+            r &= \sqrt{x^2 + y^2}
+          \end{align}
+        \]
+        In order for these coordinates to cover the entire plane, the range
+        of $\phi(x,y)$ and $r(x, y)$ must be $0 \leq \phi < 2\pi$ and
+        $0 \leq r < \infty$. The range of $\arctan$ is $-\pi/2 < \phi < \pi / 2$.
+
       \item \textbf{Prove that any vector parallel transported along a
         circle of constant $r$ on the surface of the cone ends up rotated
         by an angle $\beta$ after a complete trip. Express $\beta$ in terms
