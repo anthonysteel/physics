@@ -183,11 +183,30 @@
         In order for these coordinates to cover the entire plane, the range
         of $\phi(x,y)$ and $r(x, y)$ must be $0 \leq \phi < 2\pi$ and
         $0 \leq r < \infty$. The range of $\arctan$ is $-\pi/2 < \phi < \pi / 2$.
-
+        Check this later.
       \item \textbf{Prove that any vector parallel transported along a
         circle of constant $r$ on the surface of the cone ends up rotated
         by an angle $\beta$ after a complete trip. Express $\beta$ in terms
         of $\alpha$.}
+        The equation for parallel transport is:
+        \[
+          t^a \nabla_a v^b = 0
+        \]
+        where $t^a$ is the tangent along the curve and $v^b$ is the vector
+        being parallelly transported.
+        \[
+          t^a \partial_a v^b + t^a \Gamma^b_{ac} v^c = 0
+        \]
+        \[
+          t^r \partial_r v^b + t^\phi \partial_\phi v^b +
+          t^r \Gamma^b_{rr} v^r +t^r \Gamma^b_{r\phi} v^\phi + t^\phi \Gamma^b_{\phi r} v^r + t^\phi \Gamma^b_{\phi\phi } v^\phi = 0
+        \]
+        \[
+          \Gamma^c_{ab} = \frac{1}{2} g^{cd} (\partial_a g_{bd} + \partial_b g_{ad} - \partial_d g_{ab} )
+        \]
+        \[
+          \Gamma^c_{r\phi} = \frac{1}{2} g^{cd} (\partial_r g_{\phi d} + \partial_b g_{ad} - \partial_d g_{ab} )
+        \]
     \end{enumerate}
 \end{enumerate}
 \end{document}
