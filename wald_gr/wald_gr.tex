@@ -674,6 +674,34 @@ this basis, thereby defining the functions $C^\gamma_\alpha_\beta=-C^\gamma_\bet
     \[
       T^c_{ab} X^a Y^b = X^a \nabla_a Y^c - Y^a \nabla_a X^c - [X, Y]^c
     \]
+    Consider the vector fields applied to any smooth function:
+    \[
+      T^c_{ab} X^a Y^b = X^a \nabla_a Y^c - Y^a \nabla_a X^c - X^a \nabla_a Y^c + Y^a \nabla_a X^c
+    \]
+    \[
+      [X,Y]^b = X^a \nabla_a Y^b - Y^a \nabla_a X^b
+    \]
   \end{enumerate}
+  \item
+  \item
+    \begin{enumerate}
+      \item \textbf{Show that $R_{abcd} = R_{cdab}$}
+        \[
+          {R_{abc}}^d = -{R_{bac}}^d
+        \]
+        \[
+            {R_{[abc]}}^d = 0 =  \frac{1}{6} ( {R_{abc}}^d - {R_{c ba}}^d  + {R_{bca}}^d - {R_{ac b}}^d + {R_{cab}}^d - {R_{bac}}^d)
+        \]
+        \[
+          {R_{abc}}^d - {R_{c ba}}^d  + {R_{bca}}^d - {R_{ac b}}^d + {R_{cab}}^d - {R_{bac}}^d = 0
+        \]
+        Lowering the $d$ index using the metric:
+        \[
+          R_{abcd} - R_{cbad}  + R_{bcad} - R_{acbd} + R_{cabd} - R_{bacd} = 0
+        \]
+        \[
+          R_{abcd} = - R_{abdc}
+        \]
+    \end{enumerate}
 \end{enumerate}
 \end{document}
