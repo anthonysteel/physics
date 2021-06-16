@@ -31,7 +31,7 @@ them, please make a pull request.
 ## Textbook Wishlist
 - [ ] [Jackon's Classical Electrodynamics](http://www.fulviofrisone.com/attachments/article/475/Jackson%20J%20D%20Classical%20Electrodynamics%20(Wiley,%201962)(T)(656S).pdf)
 - [ ] [Ramond's Field Theory A Modern Primer](http://gr.xjtu.edu.cn/c/document_library/get_file?p_l_id=21699&folderId=2383653&name=DLFE-82651.pdf)
-- [ ] [Srednicki's Quantum Field Theory](https://web.physics.ucsb.edu/~mark/ms-qft-DRAFT.pdf)
+- [x] [Srednicki's Quantum Field Theory](https://web.physics.ucsb.edu/~mark/ms-qft-DRAFT.pdf)
 - [ ] [Sakurai's Advanced Quantum Mechanics](https://www.fisica.net/ebooks/quantica/Advanced%20Quantum%20Mechanics.pdf)
 - [ ] [Hawking and Ellis' The Large Scale Structure of Space-Time](https://yale.learningu.org/download/2edd46dc-7ff5-4084-8161-5b5328974fa0/E2143_The%20Large-Scale%20Structure%20of%20Spacetime%20(1973)%20-%20Hawking,%20Ellis.pdf)
 - [ ] [Choquet-Bruhat's General Relativity and the Einstein Equations](https://www.amazon.ca/Relativity-Einstein-Equations-Mathematical-Monographs/dp/0199230722)
