@@ -124,7 +124,7 @@
     \]
         \end{enumerate}
       \item
-      \item 
+      \item
       \item \textbf{Suppose that a complex number $z$ has the property that $z^* = z$. What does this indicate about $z$?}
 
         This indicates that $z$ is a real number.
@@ -154,5 +154,133 @@
         \[
           \frac{\sqrt{1}}{\sqrt{-1} }= \frac{1}{\sqrt{-1}} = e^{-i\pi/2}
         \]
+      \item
+        \textbf{Determine which of the following are linear operators, and which
+        are not.}
+        \begin{enumerate}
+          \item \textbf{The parity operator $\Pi[f(x)]=f(-x)$.}
+            \[
+              \begin{align}
+                \Pi[f(x) + g(x)] &= f(-x) + g(-x)\\
+                                 &= \Pi[f(x)] + \Pi[g(x)]
+              \end{align}
+            \]
+            \[
+              \begin{align}
+                \Pi[cf(x)] &= cf(-x) \\
+                           &= c\Pi[f(x)]
+              \end{align}
+            \]
+            Therefore the parity operator is linear.
+          \item \textbf{The transformation operator $T[f(x)] = f(x+1)$.}
+            \[
+              \begin{align}
+                T[f(x) + g(x)] &= f(x+1) + g(x+1)\\
+                               &= T[f(x)] + T[g(x)]
+              \end{align}
+            \]
+            \[
+              \begin{align}
+                T[cf(x)] &= cf(x+1)\\
+                         &= cT[f(x)]
+              \end{align}
+            \]
+            Therefore the transformation operator is linear.
+          \item \textbf{The operator $L[f(x)] = f(x) + 1$}
+            \[
+              L[f(x) + g(x)] = f(x) + g(x) + 1 \neq L[f(x)] + L[g(x)]
+            \]
+            \[
+              L[cf(x)] = cf(x) + 1 \neq cL[f(x)]
+            \]
+            Therefore the operator is not linear.
+        \end{enumerate}
+      \item \textbf{Consider the identity operator $I$, defined by $I[f(x)] = f(x)$.}
+        \begin{enumerate}
+          \item \textbf{Show that $I$ is a linear operator.}
+            \[
+              I[f(x) + g(x)] = f(x) + g(x) = I[f(x)] + I[g(x)]
+            \]
+            \[
+              I[cf(x)] = cf(x) = cI[f(x)]
+            \]
+            Therefore the identity operator is linear.
+          \item \textbf{Find the eigenfunctions and corresponding eigenvalues of $I$}
+
+            The eigenfunctions are given by:
+            \[
+              I[f(x)] = f(x) = cf(x)
+            \]
+            Therefore every function is an eigen function of the identity operator
+            with eigenvalue $c=1$.
+        \end{enumerate}
+      \item \textbf{Suppose that the function $f(x)$ is an eigenfunction of the linear
+          operator $P$ with eigenvalue $p$, and $f(x)$ is also an eigenfunction of the
+          linear operator $Q$ with eigenvalue $q$. Show that $PQ[f(x)] = QP[f(x)]$, where
+          $PQ[f(x)]$ means to first apply the operator $Q$ to $f(x)$, and then apply
+        $P$ to the result.}
+
+        \[
+          \begin{align}
+            PQ[f(x)] &= P[Q[f(x)] \\
+                     &= P[q f(x) ] \\
+                     &= pqf(x)
+          \end{align}
+        \]
+        \[
+          \begin{align}
+            QP[f(x)] &= Q[P[f(x)] \\
+                     &= Q[p f(x) ] \\
+                     &= qpf(x)
+          \end{align}
+        \]
+        Because the eigenvalues are real numbers they comute. Thefore:
+        \[
+          PQ[f(x)] = QP[f(x)]
+        \]
+
+      \item \textbf{Consider the square of the derivative operator}
+        \begin{enumerate}
+          \item
+            \textbf{Show that $D^2$ is a linear operator}
+            \[
+              \begin{align}
+                D^2[f(x) + g(x)] &= \frac{d^2}{dx^2} \Big( f(x) + g(x) \Big)\\
+                                 &= \frac{d^2f}{dx^2} + \frac{d^2g}{dx^2}\\
+                                 &= D^2[f(x)] + D^2[g(x)]
+              \end{align}
+            \]
+            \[
+              \begin{align}
+                D^2[cf(x)] &= \frac{d^2}{dx^2}\Big( cf(x)\Big) \\
+                           &= c \frac{d^2f}{dx^2}\\
+                           &= c D^2[f(x)]
+              \end{align}
+            \]
+            Therfore $D^2$ is a linear operator.
+          \item
+            The eigenfunctions of $D^2$ are given by:
+            \[
+              D^2[f(x)] = \frac{d^2f}{dx^2} = cf(x)
+            \]
+            which is equivalent to solving the homogenous linear second-order
+            differential equation:
+            \[
+              \frac{d^2f}{dx^2} - cf(x) =0
+            \]
+            This equation has the solution:
+            \[
+              f(x) = Ae^{i\sqrt{c}x} + Be^{-i\sqrt{c}x}
+            \]
+          \item
+            \textbf{Give an example of an eigenfunction of $D^2$ which is not
+            an eigenfunction of $D$}
+            \[
+              f(x) = A\cos(\sqrt{c} x)
+            \]
+        \end{enumerate}
+      \item \textbf{Let $f(x)$ be an eigenfunction of a linear operator $L$ with
+          eigenvalue $a$. Show that $cf(x)$ (where $c$ is a constant) is an
+          eigenfunction of $L$ with eigenvalue $a$.}
   \end{enumerate}
 \end{document}
