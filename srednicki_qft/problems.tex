@@ -1,0 +1,89 @@
+\documentclass[9pt]{report}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+%\usepackage[dutch]{babel}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+\title{Srednicki's Quantum Field Theory\protect\\ Problems}
+\author{Anthony Steel}
+\date{\today}
+\maketitle
+\chapter{Attemps at relativistic quantum mechanics}
+\begin{enumerate}
+  \item
+  \textbf{Show that the Dirac matrices must be even dimensional. Hint: show that
+  the eigenvalues of $\beta$ are all $\pm1$, and that $\text{Tr}\beta = 0$, consider,
+e.g., $\text{Tr}\alpha^2_1\beta$. Similarly, show that $\text{Tr}\alpha_i=0$}
+  
+  To determine the eigenvalues of $\beta$ consider the second commutation relation:
+  \[
+    (\beta^2)_{ab} = \delta_{ab} \to (\beta)_{ab} = \pm \sqrt{\delta_{ab}}  = \pm \delta_{ab}
+  \]
+  Therefore the eigenvalues of $\beta$ are $\pm 1$.
+  Now to show $\text{Tr}\beta=0$, three relationships are needed. Consider:
+  \[
+    \begin{align}
+    \{\alpha^j,\alpha^k\}_{ab} &= 2\delta^{jk}\delta_{ab} \\
+    \end{align}
+  \]
+  In the case where $\alpha^j = \alpha^k$ and $a = b = 1$:
+  \begin{equation}
+    \begin{align}
+    \alpha^2_1 = 1\\
+    \end{align}
+  \end{equation}
+  Secondly consider that the trace is cyclic. That is: 
+  \begin{equation}
+    \begin{align}
+    \text{Tr}AB &= \text{Tr}BA\\
+    \end{align}
+  \end{equation}
+  Finally using the commutation relation:
+  \[
+    \begin{align}
+      \{\alpha^j, \beta\}_{ab} &= 0\\
+      (\alpha^j\beta + \beta\alpha^j)_{ab} &= 0\\
+      (\alpha^j\beta)_{ab} &= -(\beta\alpha^j)_{ab}\\
+    \end{align}
+  \]
+  Substituting and summarizing:
+  \[
+    \begin{align}
+      \text{Tr}\beta&= \text{Tr}\beta(1)\\
+                    &= \text{Tr}\beta\alpha_1^2\\
+                    &= \text{Tr}\beta\alpha_1\alpha_1\\
+                    &= \text{Tr}\alpha_1\beta\alpha_1\\
+                    &= -\text{Tr}\beta\alpha_1\alpha_1\\
+                    &= -\text{Tr}\beta\alpha_1^2\\
+                    &= -\text{Tr}\beta\\
+    \end{align}
+  \]
+  The only number where $\text{Tr}\beta = -\text{Tr}\beta$ is $0$. Therefore:
+  \[
+    \text{Tr}\beta = 0
+  \]
+  Similarily to show that $\text{Tr}\alpha_i = 0$, consider $\beta^2_1 = 1$.
+  \[
+    \begin{align}
+      \text{Tr}\alpha_i &= \text{Tr}\alpha_i(1)\\
+                        &= \text{Tr}\alpha_i\beta^2_1\\
+                        &= \text{Tr}\beta_1\alpha_i\beta_1\\
+                        &= -\text{Tr}\alpha_i\beta_1\beta_1\\
+                        &= -\text{Tr}\alpha_i\beta_1^2\\
+                        &= -\text{Tr}\alpha_i\\
+    \end{align}
+  \]
+  Again this relationship is only true for $\text{Tr}\alpha_i = 0$.
+
+\item \textbf{With the hamiltonian of eq. (1.32), show that the state defined in
+  eq. (1.33) the abstract Schr\"{o}dinger equation, eq. (1.1), if and only if
+  the wave function obeys eq. (1.30). Your demonstration should apply both to the
+  case of bosons, where the particle creation and annihilation operators obey
+  the commutation relations of eq. (1.31), and to fermions, where the particle
+  creation and annihilation operators obey the anticommutation relations of
+  eq. (1.38)}
+\end{enumerate}
+\end{document}
