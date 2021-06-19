@@ -1,0 +1,92 @@
+\documentclass[9pt]{report}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{gensymb}
+%\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+%\usepackage[dutch]{babel}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+\title{Scherrer's Quantum Mechanics\protect\\ Problems}
+\author{Anthony Steel}
+\date{\today}
+\maketitle
+\chapter{The Origin Of Quantum Mechanics}
+  \begin{enumerate}
+    \item \textbf{Assume that a human body emits blackbody radiation at the
+      standard body temperature.}
+      \begin{enumerate}
+        \item \textbf{Estimate how much energy is radiated by the body in one hour.}
+
+          The power emmitted by a blackbody is given by:
+          \[
+            P = \sigma A T^4
+          \]
+          where $A$ is the surface area of the body, $T$ is the temperature
+          and $\sigma$ is the Stefan-Boltzmann constant. Therefore
+        the energy radiated by a body in a given time interval $\Delta t$:
+          \[
+            E = \sigma A T^4 \Delta t
+          \]
+          The surface area of the human body is approximately $2\text{m}^2$,
+          the average body temperature is $36.1^{\circ}\text{C} = 309.25 \text{K}$,
+          and there are $3600$s in an hour. Therefore:
+          \[
+            \begin{align}
+            E_\text{hour}
+            &= \Big(5.67 * 10^{-8} \frac{\text{J}}{\text{s m}^2\text{K}^4}\Big)( 2\text{m}^2 )(309.25\text{K})^4(3600\text{s})\\
+            &= 3733 \text{kJ}
+            \end{align}
+          \]
+
+        \item \textbf{At what wavelength does this radiation reach a maximum}
+
+          The formula for the maximum wavelength is:
+          \[
+            \lambda_\text{peak} = \frac{w}{T}
+          \]
+          where $w = 2.90 * 10^{-3} \text{m K}$ and $T = 309.25\text{K}$ as
+          before. Therefore the maximum wavelength is:
+          \[
+            \lambda_\text{peak} = \frac{2.9 * 10^{-3} \text{m K}}{309.25\text{K}} = 9.37 * 10^{-6} \text{m}
+          \]
+      \end{enumerate}
+        \item \textbf{A distant red star is observed to have a blackbody spectrum with a
+          maximum at a wavelength of $3500$\AA [$1$\AA = $10^{-10}$ m]. What is the
+          temperature of the star?}
+
+          Inverting the formula from the pervious question:
+          \[
+            T = \frac{w}{\lambda_\text{peak}}
+          \]
+          giving:
+          \[
+            T = \frac{2.9 * 10^{-3} \text{m K}}{ 3500 * 10^{-10} \text{m}} = 51428 \text{K}
+          \]
+
+        \item \textbf{The universe is filled with blackbody radiation at a temperature
+            of $2.7$K left over from the Big Bang. [This radiation was disvoered in
+          1965 by Bell Laboratory scientists who thought at one point that they were seeing
+          interference from pigeon droppings on their microwave reciever.}
+          \begin{enumerate}
+          \item
+            \textbf{What is the total energy density of this radiation?}
+
+            The  energy density of the radiation is given by:
+              \[
+                \rho = a T^4
+              \]
+              where $a = 7.56 * 10^{-16} \frac{\text{J}}{\text{m}^3 \text{K}^4}$.
+              Therefore:
+              \[
+                \rho = 7.56 * 10^{-16} \frac{\text{J}}{\text{m}^3 \text{K}^4} * (2.7\text{K})^4 = 4.01 * 10^{-14} \frac{\text{J}}{\text{m}^3}
+              \]
+          \item
+            \textbf{What is the total energy density with wavelengths between
+            $1$mm and $1.01$mm? Is the Rayleigh-Jeans formula a good approximation
+            at these wavelengths?}
+          \end{enumerate}
+  \end{enumerate}
+  \chapter{Math Interlude A: Complex Numbers and Linear Operators}
+\end{document}
