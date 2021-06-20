@@ -1,5 +1,6 @@
 \documentclass[9pt]{report}
 \usepackage{graphicx}
+\usepackage{bm}
 \usepackage[utf8]{inputenc}
 %\usepackage[T1]{fontenc}
 \usepackage{textcomp}
@@ -11,13 +12,13 @@
 \author{Anthony Steel}
 \date{\today}
 \maketitle
-\chapter{Attemps at relativistic quantum mechanics}
+\chapter{Attempts at relativistic quantum mechanics}
 \begin{enumerate}
   \item
   \textbf{Show that the Dirac matrices must be even dimensional. Hint: show that
   the eigenvalues of $\beta$ are all $\pm1$, and that $\text{Tr}\beta = 0$, consider,
 e.g., $\text{Tr}\alpha^2_1\beta$. Similarly, show that $\text{Tr}\alpha_i=0$}
-  
+
   To determine the eigenvalues of $\beta$ consider the second commutation relation:
   \[
     (\beta^2)_{ab} = \delta_{ab} \to (\beta)_{ab} = \pm \sqrt{\delta_{ab}}  = \pm \delta_{ab}
@@ -35,7 +36,7 @@ e.g., $\text{Tr}\alpha^2_1\beta$. Similarly, show that $\text{Tr}\alpha_i=0$}
     \alpha^2_1 = 1\\
     \end{align}
   \end{equation}
-  Secondly consider that the trace is cyclic. That is: 
+  Secondly consider that the trace is cyclic. That is:
   \begin{equation}
     \begin{align}
     \text{Tr}AB &= \text{Tr}BA\\
@@ -85,5 +86,58 @@ e.g., $\text{Tr}\alpha^2_1\beta$. Similarly, show that $\text{Tr}\alpha_i=0$}
   the commutation relations of eq. (1.31), and to fermions, where the particle
   creation and annihilation operators obey the anticommutation relations of
   eq. (1.38)}
+  \[
+    \begin{align}
+      H = &\int d^3 x a^\dagger(\bm{x})\Big(-\frac{h^2}{2m} \nabla^2 + U(\bm{x}) \Big) a(\bm{x}) \\
+    &+ \frac{1}{2} \int d^3xd^3y V(\bm{x} - \bm{y}) a^\dagger(\bm{x}) a^\dagger(\bm{y}) a(\bm{x})a(\bm{y})
+    \end{align}
+  \]
+
+\item \textbf{Show explicitly that $[N, H] = 0$, where $H$ is given by eq.
+  (1.32) and $N$ by eq. (1.35).}
+  \[
+    \begin{align}
+      H = &\int d^3 x a^\dagger(\bm{x})\Big(-\frac{h^2}{2m} \nabla^2 + U(\bm{x}) \Big) a(\bm{x}) \\
+    &+ \frac{1}{2} \int d^3xd^3y V(\bm{x} - \bm{y}) a^\dagger(\bm{x}) a^\dagger(\bm{y}) a(\bm{x})a(\bm{y})
+    \end{align}
+  \]
+  \[
+    N = \int d^3x a^\dagger(\bm{x})
+  \]
+
 \end{enumerate}
+  \chapter{Lorentz invariance}
+  \begin{enumerate}
+    \item \textbf{Verify that eq. (2.8) follows from eq. (2.3).}
+
+      Consider eq (2.3) given by:
+      \[
+        g_{\mu\nu} \Lambda^\mu_\rho \Lambda^\nu_\sigma = g_{\rho\sigma}
+      \]
+      Writing the Lorentz transformation in terms of the infinitesimal
+      Lorentz transformation gives:
+      \[
+        \begin{align}
+        g_{\mu\nu} \Lambda^\mu_\rho \Lambda^\nu_\sigma &= g_{\rho\sigma}\\
+        g_{\mu\nu} (\delta^\mu_\rho + \delta\omega^\mu_\rho)(\delta^\nu_\sigma+\delta\omega^\nu_\sigma) &= g_{\rho\sigma}\\
+        g_{\mu\nu} (\delta^\mu_\rho \delta^\nu_\sigma + \delta^\mu_\rho \delta\omega^\nu_\sigma+\delta\omega^\mu_\rho\delta^\nu_\sigma+\delta\omega^\mu_\rho\delta\omega^\nu_\sigma) &= g_{\rho\sigma}\\
+        g_{\mu\nu}\delta^\mu_\rho \delta^\nu_\sigma + g_{\mu\nu}\delta^\mu_\rho \delta\omega^\nu_\sigma+g_{\mu\nu}\delta\omega^\mu_\rho\delta^\nu_\sigma+g_{\mu\nu}\delta\omega^\mu_\rho\delta\omega^\nu_\sigma &= g_{\rho\sigma}\\
+        g_{\rho\nu}\delta^\nu_\sigma + g_{\rho\nu} \delta\omega^\nu_\sigma+g_{\mu\sigma}\delta\omega^\mu_\rho+O(\delta\omega^2)&= g_{\rho\sigma}\\
+        \end{align}
+      \]
+      Because $\delta\omega$ is an infinitesimal we ignore terms appearing quadratic
+      in it. Therefore:
+      \[
+        \begin{align}
+        g_{\rho\nu}\delta^\nu_\sigma + g_{\rho\nu} \delta\omega^\nu_\sigma+g_{\mu\sigma}\delta\omega^\mu_\rho&= g_{\rho\sigma}\\
+        g_{\rho\sigma}+ \delta\omega_{\rho\sigma}+\delta\omega_{\sigma\rho}&= g_{\rho\sigma}\\
+        \delta\omega_{\rho\sigma}+\delta\omega_{\sigma\rho}&= 0\\
+        \delta\omega_{\rho\sigma}&=-\delta\omega_{\sigma\rho}\\
+        \end{align}
+      \]
+      Thereby verifying eq (2.8):
+      \[
+          \delta\omega_{\rho\sigma} = -\delta\omega_{\sigma\rho}
+      \]
+  \end{enumerate}
 \end{document}
