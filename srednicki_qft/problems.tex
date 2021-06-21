@@ -139,5 +139,20 @@ e.g., $\text{Tr}\alpha^2_1\beta$. Similarly, show that $\text{Tr}\alpha_i=0$}
       \[
           \delta\omega_{\rho\sigma} = -\delta\omega_{\sigma\rho}
       \]
+    \item \textbf{Verify that eq. (2.14) follows from $U(\Lambda)^{-1}U(\Lambda')U(\Lambda)=U(\Lambda^{-1}\Lambda'\Lambda)$}
+      Start by letting:
+      \[
+        \Lambda' = 1 + \delta\omega'
+      \]
+      gives:
+      \[
+        \begin{align}
+        U(\Lambda)^{-1}U(\Lambda')U(\Lambda)&=U(\Lambda^{-1}\Lambda'\Lambda)\\
+        U(\Lambda)^{-1}U(1 + \delta\omega')U(\Lambda)&=U(\Lambda^{-1}(1 + \delta\omega')\Lambda)\\
+        U(\Lambda)^{-1}(I + \frac{i}{2\hbar}\delta\omega_{\mu\nu}M^{\mu\nu})U(\Lambda)&=U(\Lambda^{-1}(1 + \delta\omega')\Lambda)\\
+        U(\Lambda)^{-1}U(\Lambda) + U(\Lambda^{-1})\frac{i}{2\hbar}\delta\omega_{\mu\nu}M^{\mu\nu}U(\Lambda)&=U(\Lambda^{-1}\Lambda + \Lambda^{-1}\delta\omega'\Lambda)\\
+        I + U(\Lambda^{-1})\frac{i}{2\hbar}\delta\omega_{\mu\nu}M^{\mu\nu}U(\Lambda)&=U(\Lambda^{-1}(1 + \delta\omega')\Lambda)\\
+        \end{align}
+      \]
   \end{enumerate}
 \end{document}
