@@ -47,3 +47,4 @@ them, please make a pull request.
 - [ ] [Schutz's Geometrical Methods of Mathematical Physics](https://www.amazon.ca/Geometrical-Methods-Mathematical-Physics-Bernard/dp/0521298873)
 - [ ] [Hamermesh Group Theory and Its Application to Physical Problems](https://www.amazon.ca/Group-Theory-Application-Physical-Problems/dp/0486661814)
 - [ ] [Chris Quigg Gauge Theories of the Strong, Weak and Electromagnetic Interactions](https://www.amazon.ca/Gauge-Theories-Strong-Electromagnetic-Interactions/dp/0691135487?asin=0691135487&revisionId=&format=4&depth=1)
+- [ ] [Benenti Principles of Quantum Computation and Infromation: A comprehensive Textbook](https://www.amazon.ca/Principles-Quantum-Computation-Information-Second/dp/9813237228/ref=sr_1_1?dchild=1&keywords=principles+of+quantum+computation+and+information&qid=1624559056&sr=8-1)
