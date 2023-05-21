@@ -5,7 +5,7 @@ c = 299792458 # m/s
 year = 31556952 # s
 lightyear = c * year
 
-galactic_center = (30*10**4) * lightyear
+galactic_center = (30*10**3) * lightyear
 
 print(galactic_center)
 
